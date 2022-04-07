@@ -2,4 +2,11 @@
 
 Single Page App Displaying Recent Commits of React Repo
 
-[see live site at netlify](https://x48lpj.csb.app)
+# Demonstrating:
+
+- loading data from api
+- cutom hook use
+- Clinet Side List Pagination
+- Clinet Side List Filtering
+
+[see live site at netlify](https://csb-8ixc5x.netlify.app)
