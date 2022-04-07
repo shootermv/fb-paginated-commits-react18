@@ -26,7 +26,7 @@ const useFetchData = () => {
           console.log(d.message);
           throw Error("Err");
         }*/
-        setCommits(processData(d));
+        setCommits(processData(d)); // can be replaced by "mockData"
       })
       .catch((err) => {
         setError("some error!");

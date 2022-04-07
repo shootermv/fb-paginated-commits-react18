@@ -1,15 +1,6 @@
 import { useState } from "react";
+import { formatMessage } from "./util";
 
-function formatMessage(str, term, showMore) {
-  if (term) {
-    str = str.replace(
-      new RegExp(term, "ig"),
-      `<b style="color:red">${term}</b>`
-    );
-  }
-  if (showMore) return str;
-  return `${str.slice(0, 100)}`;
-}
 export default function Message({ title, term, link = "" }) {
   const [showMore, setShowMore] = useState(false);
   return (
