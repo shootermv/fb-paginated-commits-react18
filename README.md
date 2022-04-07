@@ -6,7 +6,7 @@ Single Page App Displaying Recent Commits of [React](https://reactjs.org) Repo
 
 - Loading data from github api
 - Custom Hook Use
-- Clinet Side List Pagination
-- Clinet Side List Filtering
+- Client Side List Pagination
+- Client Side List Filtering
 
 [see live site at netlify](https://csb-8ixc5x.netlify.app)
