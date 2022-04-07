@@ -9,6 +9,7 @@ export default function Pagination({
   return (
     <div className="pagination">
       <button
+        data-testid="pagination-back"
         disabled={!(currentPage > 1)}
         onClick={() => currentPage > 1 && setCurrentPage(currentPage - 1)}
       >
@@ -19,6 +20,7 @@ export default function Pagination({
       <div>of</div>
       <div data-testid="total-pages">{totalPages}</div>
       <button
+        data-testid="pagination-forward"
         disabled={!(currentPage < totalPages)}
         onClick={() =>
           currentPage < totalPages && setCurrentPage(currentPage + 1)
