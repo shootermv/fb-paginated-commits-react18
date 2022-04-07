@@ -5,7 +5,7 @@ Single Page App Displaying Recent Commits of [React](https://reactjs.org) Repo
 # Demonstrating:
 
 - Loading data from github api
-- Cutom hook use
+- Custom Hook Use
 - Clinet Side List Pagination
 - Clinet Side List Filtering
 
