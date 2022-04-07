@@ -1,16 +1,7 @@
 import { useEffect, useState } from "react";
 import mockData from "./mock.json";
-function processData(d) {
-  if (!Array.isArray(d)) return [];
-  let res = d.map((obj, idx) => {
-    obj.idx = idx + 1;
-    obj.link = obj.html_url;
-    obj.title = obj.commit.message;
-    obj.date = obj.commit.committer.date;
-    return obj;
-  });
-  return res;
-}
+import { processData } from "./util";
+
 // custom hook usage
 const useFetchData = () => {
   const [commits, setCommits] = useState([]);
