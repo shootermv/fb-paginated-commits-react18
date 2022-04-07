@@ -1,11 +1,11 @@
 # Playing Around With React18
 
-Single Page App Displaying Recent Commits of React Repo
+Single Page App Displaying Recent Commits of [React](https://reactjs.org) Repo
 
 # Demonstrating:
 
-- loading data from api
-- cutom hook use
+- Loading data from github api
+- Cutom hook use
 - Clinet Side List Pagination
 - Clinet Side List Filtering
 
