@@ -4,7 +4,7 @@ export default function Pagination({
   pageSize,
   records
 }) {
-  const totalPages = Math.floor(records / pageSize) || 1;
+  const totalPages = Math.ceil(records / pageSize);
 
   return (
     <div className="pagination">

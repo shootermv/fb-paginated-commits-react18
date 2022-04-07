@@ -37,6 +37,24 @@ test("given 1 pagesize and 10 records and currentPage-2 - should display 2 of 5 
   expect(getByTestId("total-pages")).toHaveTextContent(5);
   //debug()
 });
+
+test("given 1 pagesize 5 and 11 records - should display 1 of 3 pages", () => {
+  let currentPage = 1;
+  let setCurrentPage = () => {};
+  let pageSize = 5;
+  let records = 11;
+  const { debug, getByTestId } = render(
+    <Pagination
+      currentPage={currentPage}
+      records={records}
+      pageSize={pageSize}
+      setCurrentPage={setCurrentPage}
+    />
+  );
+  expect(getByTestId("current-page")).toHaveTextContent(1);
+  expect(getByTestId("total-pages")).toHaveTextContent(3);
+  //debug()
+});
 test("given page 1, size 5 and records 10 - after clicking forward should change page to 2", () => {
   const Wrap = () => {
     let [currentPage, setCurrentPage] = useState(1);
