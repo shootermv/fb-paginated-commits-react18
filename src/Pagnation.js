@@ -15,9 +15,9 @@ export default function Pagination({
         &lt;
       </button>
       <div>Page</div>
-      <div>{currentPage}</div>
+      <div data-testid="current-page">{currentPage}</div>
       <div>of</div>
-      <div>{totalPages}</div>
+      <div data-testid="total-pages">{totalPages}</div>
       <button
         disabled={!(currentPage < totalPages)}
         onClick={() =>

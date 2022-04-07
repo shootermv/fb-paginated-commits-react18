@@ -13,7 +13,9 @@ export default function App() {
   if (error)
     return (
       <div className="App">
-        <div style={{ background: "red", color: "white" }}>error!</div>
+        <div style={{ background: "red", color: "white" }}>
+          API rate limit exceeded!
+        </div>
       </div>
     );
   if (!commits?.length) return <div className="App">No Data Yet</div>;

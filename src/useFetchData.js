@@ -13,10 +13,12 @@ const useFetchData = () => {
       .then((d) => d.json())
       .then((d) => {
         //console.log(d.message);
-        /*if (d?.message?.includes("limit")) {
+        if (d?.message?.includes("limit")) {
           console.log(d.message);
-          throw Error("Err");
-        }*/
+          // throw Error("Err");
+          setCommits(processData(mockData));
+          return;
+        }
         setCommits(processData(d)); // can be replaced by "mockData"
       })
       .catch((err) => {
