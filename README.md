@@ -1,5 +1,7 @@
 # Playing Around With React18
 
+![gif](./commits.gif)
+
 Single Page App Displaying Recent Commits of [React](https://reactjs.org) Repo
 
 # Demonstrating:
