@@ -74,3 +74,20 @@ test("given page 1, size 5 and records 10 - after clicking forward should change
   expect(getByTestId("current-page")).toHaveTextContent(2);
   //debug()
 });
+test("given size bigger than records - should display 1 page", () => {
+  let currentPage = 1;
+  let setCurrentPage = () => {};
+  let pageSize = 15;
+  let records = 10;
+  const { debug, getByTestId } = render(
+    <Pagination
+      currentPage={currentPage}
+      records={records}
+      pageSize={pageSize}
+      setCurrentPage={setCurrentPage}
+    />
+  );
+  expect(getByTestId("current-page")).toHaveTextContent(1);
+  expect(getByTestId("total-pages")).toHaveTextContent(1);
+  //debug()
+});

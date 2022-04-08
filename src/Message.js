@@ -4,7 +4,7 @@ import { formatMessage } from "./util";
 export default function Message({ title, term, link = "" }) {
   const [showMore, setShowMore] = useState(false);
   return (
-    <>
+    <div className="commit-message">
       <a
         href={link}
         target={"_blank"}
@@ -13,10 +13,10 @@ export default function Message({ title, term, link = "" }) {
         }}
       />
       {title.length > 100 && (
-        <span onClick={() => setShowMore(!showMore)}>
+        <span onClick={() => setShowMore(!showMore)} className="show-more">
           {showMore ? " less" : "...more"}
         </span>
       )}
-    </>
+    </div>
   );
 }

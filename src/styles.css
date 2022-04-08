@@ -22,6 +22,9 @@ tbody tr:nth-child(odd) {
 input {
   background: #eee;
 }
+.commit-message span.show-more {
+  cursor: pointer;
+}
 .pagination {
   padding: 5px;
   display: flex;
