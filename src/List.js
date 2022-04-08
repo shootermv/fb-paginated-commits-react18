@@ -22,7 +22,10 @@ export default function List({ commits }) {
   return (
     <>
       <h1>Recent Commits</h1>
-      <input onChange={(e) => setTerm(e.target.value)} />
+      <input
+        onChange={(e) => setTerm(e.target.value)}
+        placeholder="🔎 search"
+      />
       {!!filtered?.length ? (
         <>
           <table>

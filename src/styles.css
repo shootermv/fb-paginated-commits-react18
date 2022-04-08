@@ -19,6 +19,9 @@ tbody tr {
 tbody tr:nth-child(odd) {
   background: #eee;
 }
+input {
+  background: #eee;
+}
 .pagination {
   padding: 5px;
   display: flex;
