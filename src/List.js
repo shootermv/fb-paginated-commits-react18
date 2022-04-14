@@ -23,12 +23,13 @@ export default function List({ commits }) {
     <>
       <h1>Recent Commits</h1>
       <input
+        data-testid="filter-input"
         onChange={(e) => setTerm(e.target.value)}
         placeholder="🔎 search"
       />
       {!!filtered?.length ? (
         <>
-          <table>
+          <table data-testid="data-table">
             <thead>
               <tr>
                 <th>&nbsp;</th>
@@ -58,7 +59,7 @@ export default function List({ commits }) {
           </div>
         </>
       ) : (
-        <div>sorry, no results found</div>
+        <div data-testid="no-data-label">sorry, no results found</div>
       )}
     </>
   );
