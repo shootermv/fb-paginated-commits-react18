@@ -14,6 +14,7 @@ export function processData(d) {
     obj.idx = idx + 1;
     obj.link = obj.html_url;
     obj.title = obj.commit.message;
+    obj.who = obj?.author?.avatar_url || "";
     obj.date = obj.commit.committer.date;
     return obj;
   });

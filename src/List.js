@@ -34,15 +34,24 @@ export default function List({ commits }) {
               <tr>
                 <th>&nbsp;</th>
                 <th>Title</th>
+                <th>Who</th>
                 <th>Date</th>
               </tr>
             </thead>
             <tbody>
-              {currentCommits.map(({ idx, title, link, date }) => (
+              {currentCommits.map(({ idx, title, link, who, date }) => (
                 <tr key={idx}>
                   <td>{idx}</td>
                   <td>
                     <Message title={title} link={link} term={term} />
+                  </td>
+                  <td>
+                    {who && (
+                      <img
+                        src={who}
+                        style={{ borderRadius: "50%", height: "22px" }}
+                      />
+                    )}
                   </td>
                   <td>{new Date(date).toLocaleDateString("en-GB")}</td>
                 </tr>
