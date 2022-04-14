@@ -1,8 +1,10 @@
 import List from "./List";
 import "./styles.css";
+import { Routes, Route, Link } from "react-router-dom";
 import loader from "./loader.gif";
 import useFetchData from "./useFetchData";
-export default function App() {
+
+export function Commits() {
   const { commits, error, loading } = useFetchData();
   if (loading)
     return (
@@ -23,5 +25,12 @@ export default function App() {
     <div className="App">
       <List commits={commits} />
     </div>
+  );
+}
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Commits />} />
+    </Routes>
   );
 }
