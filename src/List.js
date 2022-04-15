@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Pagination from "./Pagnation";
 import Message from "./Message";
+import AuthorLink from "./AuthorLink";
 export default function List({ commits }) {
   const [term, setTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
@@ -46,12 +47,7 @@ export default function List({ commits }) {
                     <Message title={title} link={link} term={term} />
                   </td>
                   <td>
-                    {who && (
-                      <img
-                        src={who}
-                        style={{ borderRadius: "50%", height: "22px" }}
-                      />
-                    )}
+                    <AuthorLink who={who} />
                   </td>
                   <td>{new Date(date).toLocaleDateString("en-GB")}</td>
                 </tr>
