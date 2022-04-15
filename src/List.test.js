@@ -15,7 +15,11 @@ test("should NOT display 'no results' if some results passed", () => {
       idx: 1,
       title: "hhh",
       link: "http://www.google.com",
-      date: "2022-04-03T01:41:49Z"
+      date: "2022-04-03T01:41:49Z",
+      who: {
+        login: "hhh",
+        avatar_url: "jjj"
+      }
     }
   ];
 

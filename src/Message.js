@@ -8,12 +8,17 @@ export default function Message({ title, term, link = "" }) {
       <a
         href={link}
         target={"_blank"}
+        data-testid="commit-message"
         dangerouslySetInnerHTML={{
           __html: formatMessage(title, term, showMore)
         }}
       />
       {title.length > 100 && (
-        <span onClick={() => setShowMore(!showMore)} className="show-more">
+        <span
+          onClick={() => setShowMore(!showMore)}
+          className="show-more"
+          data-testid="show-more"
+        >
           {showMore ? " less" : "...more"}
         </span>
       )}
