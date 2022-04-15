@@ -1,3 +1,10 @@
 export default function AuthorLink({ who }) {
-  return <img src={who} style={{ borderRadius: "50%", height: "22px" }} />;
+  return (
+    <a href={`https://github.com/${who.login}`} target="_blank">
+      <img
+        src={who.avatar_url}
+        style={{ borderRadius: "50%", height: "22px" }}
+      />
+    </a>
+  );
 }
