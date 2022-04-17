@@ -21,16 +21,18 @@ export function Commits() {
       </div>
     );
   if (!commits?.length) return <div className="App">No Data Yet</div>;
-  return (
-    <div className="App">
-      <List commits={commits} />
-    </div>
-  );
+  return <List commits={commits} />;
 }
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Commits />} />
-    </Routes>
+    <div className="App">
+      <header>REACT NEWS</header>
+      <main>
+        <Routes>
+          <Route path="/" element={<Commits />} />
+        </Routes>
+      </main>
+      <footer>made by Moshe</footer>
+    </div>
   );
 }

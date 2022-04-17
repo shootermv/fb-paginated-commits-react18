@@ -1,6 +1,28 @@
+html,
+body,
+#root {
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 .App {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   font-family: sans-serif;
   text-align: center;
+}
+header,
+footer {
+  background: #333;
+  color: #fefefe;
+  padding: 1.2em;
+}
+main {
+  flex: 1;
 }
 table {
   width: 100%;
