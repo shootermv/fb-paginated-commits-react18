@@ -19,9 +19,18 @@ tbody tr {
 tbody tr:nth-child(odd) {
   background: #eee;
 }
-input {
+input[type="search"] {
   background: #eee;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  height: 40px;
 }
+@media only screen and (max-width: 600px) {
+  input[type="search"] {
+    width: 95%;
+  }
+}
+
 .commit-message span.show-more {
   cursor: pointer;
 }

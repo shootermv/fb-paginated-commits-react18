@@ -24,6 +24,7 @@ export default function List({ commits }) {
     <>
       <h1>Recent Commits</h1>
       <input
+        type="search"
         data-testid="filter-input"
         onChange={(e) => setTerm(e.target.value)}
         placeholder="🔎 search"
