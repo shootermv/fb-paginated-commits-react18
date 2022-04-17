@@ -30,5 +30,5 @@ test("after clicking 'show more' should show full text", () => {
   fireEvent.click(getByTestId("show-more"));
   expect(getByTestId("commit-message").textContent).toContain(title);
   expect(getByTestId("show-more").textContent).toBe(" less");
-  debug();
+  //debug();
 });
