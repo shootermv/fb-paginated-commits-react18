@@ -8,6 +8,10 @@ body,
   flex-direction: column;
   height: 100vh;
 }
+:root {
+  --primary: #04aa6d;
+  --secondary: #333;
+}
 .App {
   flex: 1;
   display: flex;
@@ -17,7 +21,7 @@ body,
 }
 header,
 footer {
-  background: #333;
+  background: var(--primary);
   color: #fefefe;
   padding: 1.2em;
 }
@@ -34,6 +38,10 @@ th {
 }
 td {
   padding: 5px;
+}
+td,
+td a {
+  color: var(--secondary);
 }
 tbody tr {
   height: 46px;
