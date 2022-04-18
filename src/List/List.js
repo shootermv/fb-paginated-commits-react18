@@ -1,7 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
-import Pagination from "./Pagnation";
-import Message from "./Message";
-import AuthorLink from "./AuthorLink";
+import Pagination from "../Pagnation";
+import Message from "../Message";
+import AuthorLink from "../AuthorLink";
+
+import "./List.css";
+
 export default function List({ commits }) {
   const [term, setTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);

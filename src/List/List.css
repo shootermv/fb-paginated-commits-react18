@@ -1,0 +1,35 @@
+table {
+  width: 100%;
+}
+table tr,
+td,
+th {
+  text-align: left;
+}
+td {
+  padding: 5px;
+}
+td,
+td a {
+  color: var(--secondary);
+}
+td:not(:nth-child(2)) {
+  text-align: center;
+}
+tbody tr {
+  height: 46px;
+}
+tbody tr:nth-child(odd) {
+  background: #eee;
+}
+input[type="search"] {
+  background: #eee;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  height: 40px;
+}
+@media only screen and (max-width: 600px) {
+  input[type="search"] {
+    width: 95%;
+  }
+}
