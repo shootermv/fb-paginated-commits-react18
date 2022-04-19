@@ -27,6 +27,8 @@ footer {
 }
 main {
   flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .commit-message span.show-more {
