@@ -32,27 +32,7 @@ main {
 .commit-message span.show-more {
   cursor: pointer;
 }
-.pagination {
-  padding: 5px;
-  display: flex;
-  border: 1px solid #eee;
-}
-.pagination div,
-button {
-  min-width: 30px;
-}
-.center {
-  display: flex;
-  justify-content: center;
-}
-.pagination div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pagination button {
-  background: #eee;
-}
+
 a {
   text-decoration: none;
 }

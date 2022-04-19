@@ -1,6 +1,6 @@
 import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Pagination from "./Pagnation";
+import Pagination from "./Pagination";
 import { useState } from "react";
 
 test("given 5 pagesize and 10 records - should display 1 of 2 pages", () => {

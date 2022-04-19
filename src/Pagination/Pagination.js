@@ -1,3 +1,5 @@
+import "./Pagination.css";
+
 export default function Pagination({
   currentPage = 1,
   setCurrentPage,
