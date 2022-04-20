@@ -11,7 +11,12 @@ export default function App() {
           <Route path="/" element={<Commits />} />
         </Routes>
       </main>
-      <footer>made by Moshe</footer>
+      <footer>
+        made by{" "}
+        <a href="https://gs500coder.blogspot.com" target="_blank">
+          Moshe
+        </a>
+      </footer>
     </div>
   );
 }

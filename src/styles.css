@@ -25,6 +25,9 @@ footer {
   color: #fefefe;
   padding: 1.2em;
 }
+footer a:visited {
+  color: #fefefe;
+}
 main {
   flex: 1;
   max-width: 1200px;
