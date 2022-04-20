@@ -35,14 +35,6 @@ export default function List({ commits }) {
       {!!filtered?.length ? (
         <>
           <table data-testid="data-table">
-            <thead>
-              <tr>
-                <th>&nbsp;</th>
-                <th>Title</th>
-                <th>Who</th>
-                <th>Date</th>
-              </tr>
-            </thead>
             <tbody>
               {currentCommits.map(({ idx, title, link, who, date }) => (
                 <tr key={idx}>
