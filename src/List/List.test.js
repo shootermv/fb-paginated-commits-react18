@@ -55,6 +55,7 @@ test("when typing filter input, should show only results that contains term", ()
   const input = getByTestId("filter-input");
   fireEvent.change(input, { target: { value: "hhh" } });
   expect(() => getByTestId("no-data-label")).toThrow();
-  expect(getByTestId("data-table").querySelectorAll("tbody tr").length).toBe(1);
+  expect(getByTestId("data-table-row").textContent).toContain("hhh");
+  expect(getByTestId("data-table-row").textContent).not.toContain("vvv");
   //debug();
 });

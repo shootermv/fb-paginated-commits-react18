@@ -38,7 +38,7 @@ export default function List({ commits }) {
           <table data-testid="data-table">
             <tbody>
               {currentCommits.map(({ idx, title, link, who, date }) => (
-                <tr key={idx}>
+                <tr key={idx} data-testid="data-table-row">
                   <td>{idx}</td>
                   <td>
                     <Message title={title} link={link} term={term} />
