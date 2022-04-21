@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Pagination from "../Pagination";
-import Message from "../Message";
-import AuthorLink from "../AuthorLink";
+import Message from "./Message";
+import AuthorLink from "./AuthorLink";
 
 import "./List.css";
 

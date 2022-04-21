@@ -1,0 +1,6 @@
+.commit-message {
+  word-wrap: break-word;
+}
+.show-more {
+  color: var(--primary);
+}

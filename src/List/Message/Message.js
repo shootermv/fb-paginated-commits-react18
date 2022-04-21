@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { formatMessage } from "../util";
+import { formatMessage } from "../../util";
 import "./Message.css";
 export default function Message({ title, term, link = "" }) {
   const [showMore, setShowMore] = useState(false);
