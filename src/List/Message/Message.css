@@ -1,6 +1,10 @@
-.commit-message {
-  word-wrap: break-word;
+@media only screen and (max-width: 360px) {
+  .commit-message {
+    word-wrap: break-word;
+    max-width: 200px;
+  }
 }
+
 .show-more {
   color: var(--primary);
 }
