@@ -4,6 +4,7 @@ import Message from "./Message";
 import AuthorLink from "./AuthorLink";
 
 import "./List.css";
+import DateCmp from "./DateCmp";
 
 export default function List({ commits }) {
   const [term, setTerm] = useState("");
@@ -45,7 +46,9 @@ export default function List({ commits }) {
                   <td>
                     <AuthorLink who={who} />
                   </td>
-                  <td>{new Date(date).toLocaleDateString("en-GB")}</td>
+                  <td>
+                    <DateCmp dt={date} />
+                  </td>
                 </tr>
               ))}
             </tbody>
