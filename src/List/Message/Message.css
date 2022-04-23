@@ -1,10 +1,15 @@
+.commit-message {
+  flex: 1;
+}
 @media only screen and (max-width: 360px) {
   .commit-message {
     word-wrap: break-word;
     max-width: 200px;
   }
 }
-
+.commit-message a {
+  color: var(--secondary);
+}
 .show-more {
   color: var(--primary);
 }

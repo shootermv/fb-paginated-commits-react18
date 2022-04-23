@@ -35,24 +35,20 @@ export default function List({ commits }) {
       />
       {!!filtered?.length ? (
         <>
-          <table data-testid="data-table">
-            <tbody>
-              {currentCommits.map(({ idx, title, link, who, date }) => (
-                <tr key={idx} data-testid="data-table-row">
-                  <td>{idx}</td>
-                  <td>
-                    <Message title={title} link={link} term={term} />
-                  </td>
-                  <td>
-                    <AuthorLink who={who} />
-                  </td>
-                  <td>
-                    <DateCmp dt={date} />
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <div data-testid="data-table" className="data-table">
+            {currentCommits.map(({ idx, title, link, who, date }) => (
+              <div
+                key={idx}
+                data-testid="data-table-row"
+                className="data-table-row"
+              >
+                <div>{idx}</div>
+                <Message title={title} link={link} term={term} />
+                <AuthorLink who={who} />
+                <DateCmp dt={date} />
+              </div>
+            ))}
+          </div>
           <div className="center">
             <Pagination
               currentPage={currentPage}

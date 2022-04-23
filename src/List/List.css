@@ -1,25 +1,26 @@
-table {
+.data-table {
   width: 100%;
 }
-table tr,
-td,
-th {
+.data-table-row {
   text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
 }
-td {
+.data-table-row > div {
   padding: 5px;
+  display: flex;
+  align-items: center;
 }
-td,
-td a {
-  color: var(--secondary);
+
+.data-table-row > div:not(:nth-child(1)) {
+  border-left: #fff solid 2px;
 }
 td:not(:nth-child(2)) {
   text-align: center;
 }
-tbody tr {
-  height: 46px;
-}
-tbody tr:nth-child(odd) {
+
+.data-table-row:nth-child(odd) {
   background: #eee;
 }
 input[type="search"] {
