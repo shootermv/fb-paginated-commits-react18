@@ -5,6 +5,7 @@
   .commit-message {
     word-wrap: break-word;
     max-width: 200px;
+    width: 100%;
   }
 }
 .commit-message a {

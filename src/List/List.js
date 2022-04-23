@@ -44,6 +44,7 @@ export default function List({ commits }) {
               >
                 <div>{idx}</div>
                 <Message title={title} link={link} term={term} />
+                <span className="break" />
                 <AuthorLink who={who} />
                 <DateCmp dt={date} />
               </div>

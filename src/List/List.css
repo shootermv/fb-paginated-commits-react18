@@ -5,7 +5,7 @@
   text-align: left;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  flex-wrap: wrap;
 }
 .data-table-row > div {
   padding: 5px;
@@ -15,9 +15,6 @@
 
 .data-table-row > div:not(:nth-child(1)) {
   border-left: #fff solid 2px;
-}
-td:not(:nth-child(2)) {
-  text-align: center;
 }
 
 .data-table-row:nth-child(odd) {
@@ -32,5 +29,17 @@ input[type="search"] {
 @media only screen and (max-width: 600px) {
   input[type="search"] {
     width: 95%;
+  }
+  .break {
+    flex-basis: 100%;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+  }
+  .data-table-row > div:nth-child(1) {
+    display: none;
+  }
+  .data-table-row > div {
+    border-left: none !important;
   }
 }
