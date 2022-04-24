@@ -1,11 +1,14 @@
 .pagination {
   padding: 5px;
   display: flex;
-  border: 1px solid #eee;
 }
 .pagination div,
 button {
   min-width: 30px;
+  border: none;
+  padding: 5px 2px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 .center {
   display: flex;

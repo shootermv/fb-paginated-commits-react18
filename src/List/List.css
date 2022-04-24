@@ -1,11 +1,13 @@
 .data-table {
   width: 100%;
+  border-top: #eee solid 2px;
 }
 .data-table-row {
   text-align: left;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  border-bottom: #eee solid 2px;
 }
 .data-table-row > div {
   padding: 5px;
@@ -13,13 +15,6 @@
   align-items: center;
 }
 
-.data-table-row > div:not(:nth-child(1)) {
-  border-left: #fff solid 2px;
-}
-
-.data-table-row:nth-child(odd) {
-  background: #eee;
-}
 input[type="search"] {
   background: #eee;
   margin-bottom: 20px;

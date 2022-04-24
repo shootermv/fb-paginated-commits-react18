@@ -11,6 +11,9 @@ body,
 :root {
   --primary-color: #04aa6d;
   --secondary-color: #333;
+  --font-color: #000;
+  --bg-color: #fff;
+  --heading-color: #292922;
 }
 [data-theme="dark"] {
   --primary-color: #9a97f3;
@@ -25,6 +28,8 @@ body,
   flex-direction: column;
   font-family: sans-serif;
   text-align: center;
+  background: var(--bg-color);
+  color: var(--font-color);
 }
 header,
 footer {
