@@ -9,8 +9,8 @@
   }
 }
 .commit-message a {
-  color: var(--secondary);
+  color: var(--secondary-color);
 }
 .show-more {
-  color: var(--primary);
+  color: var(--primary-color);
 }

@@ -9,8 +9,15 @@ body,
   height: 100vh;
 }
 :root {
-  --primary: #04aa6d;
-  --secondary: #333;
+  --primary-color: #04aa6d;
+  --secondary-color: #333;
+}
+[data-theme="dark"] {
+  --primary-color: #9a97f3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
 }
 .App {
   flex: 1;
@@ -21,7 +28,7 @@ body,
 }
 header,
 footer {
-  background: var(--primary);
+  background: var(--primary-color);
   color: #fefefe;
   padding: 1.2em;
 }
