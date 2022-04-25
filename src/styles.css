@@ -10,6 +10,8 @@ body,
 }
 :root {
   --primary-color: #04aa6d;
+  --header-footer-bg-color: #04aa6d;
+  --header-footer-font-color: #fff;
   --secondary-color: #333;
   --font-color: #000;
   --bg-color: #fff;
@@ -17,6 +19,8 @@ body,
 }
 [data-theme="dark"] {
   --primary-color: #9a97f3;
+  --header-footer-bg-color: #9a97f3;
+  --header-footer-font-color: #fff;
   --secondary-color: #818cab;
   --font-color: #e1e1ff;
   --bg-color: #161625;
