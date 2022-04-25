@@ -2,6 +2,7 @@ import "./styles.css";
 import { Routes, Route, Link } from "react-router-dom";
 import { Commits } from "./Pages/Commits";
 import Header from "./Header";
+import Footer from "./Footer/Footer";
 
 export default function App() {
   return (
@@ -12,12 +13,7 @@ export default function App() {
           <Route path="/" element={<Commits />} />
         </Routes>
       </main>
-      <footer>
-        made by{" "}
-        <a href="https://gs500coder.blogspot.com" target="_blank">
-          Moshe
-        </a>
-      </footer>
+      <Footer />
     </div>
   );
 }

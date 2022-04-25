@@ -13,4 +13,5 @@
 }
 .show-more {
   color: var(--primary-color);
+  cursor: pointer;
 }

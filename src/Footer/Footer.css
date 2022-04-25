@@ -1,5 +1,8 @@
-header {
+footer {
   background: var(--primary-color);
   color: #fefefe;
   padding: 1.2em;
+}
+footer a:visited {
+  color: #fefefe;
 }
