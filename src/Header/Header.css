@@ -2,4 +2,11 @@ header {
   background: var(--primary-color);
   color: #fefefe;
   padding: 1.2em;
+  display: flex;
+}
+.header-center {
+  flex: 1;
+}
+header aside {
+  width: 25px;
 }

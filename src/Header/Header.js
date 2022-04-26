@@ -8,11 +8,18 @@ import {
 //import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import "./Header.css";
+import ModeToggle from "./ModeToggle/ModeToggle";
 export default function Header() {
   return (
     <header>
-      <FontAwesomeIcon icon={faBell} />
-      REACT NEWS
+      <aside>&nbsp;</aside>
+      <div className="header-center">
+        <FontAwesomeIcon icon={faBell} />
+        REACT NEWS
+      </div>
+      <aside>
+        <ModeToggle />
+      </aside>
     </header>
   );
 }
