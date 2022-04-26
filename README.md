@@ -11,4 +11,4 @@ Single Page App Displaying Recent Commits of [React](https://reactjs.org) Repo
 - Client Side List Pagination
 - Client Side List Filtering
 
-[see live site at netlify](https://csb-8ixc5x.netlify.app)
+[see live site at netlify](https://csb-cqci1o.netlify.app/)
