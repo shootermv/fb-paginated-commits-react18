@@ -1,10 +1,12 @@
 import "./styles.css";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Commits } from "./Pages/Commits";
+import { CommitsPage } from "./Pages/Commits";
 import Header from "./Header";
 import Footer from "./Footer/Footer";
-import Prs from "./Pages/Prs";
-import SideNav from "./SideNav/SideNav";
+import SideNav from "./SideNav";
+//import Prs from "./Pages/Prs";
+const PrsPage = React.lazy(() => import("./Pages/Prs"));
 
 export default function App() {
   return (
@@ -14,8 +16,8 @@ export default function App() {
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={<Commits />} />
-            <Route path="/prs" element={<Prs />} />
+            <Route path="/" element={<CommitsPage />} />
+            <Route path="/prs" element={<PrsPage />} />
           </Routes>
         </main>
         <Footer />
