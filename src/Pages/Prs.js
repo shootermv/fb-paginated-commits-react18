@@ -1,11 +1,10 @@
 import { Suspense } from "react";
+import Loader from "../Loader";
 
 export default function Prs() {
   return (
-    <Suspense fallback={() => <>wait...</>}>
-      <div className="App">
-        <h1>Pull Requests</h1>
-      </div>
-    </Suspense>
+    <div className="App">
+      <h1>Pull Requests</h1>
+    </div>
   );
 }
