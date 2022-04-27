@@ -5,7 +5,6 @@ import { CommitsPage } from "./Pages/Commits";
 import Header from "./Header";
 import Footer from "./Footer/Footer";
 import SideNav from "./SideNav";
-//import Prs from "./Pages/Prs";
 const PrsPage = React.lazy(() => import("./Pages/Prs"));
 
 export default function App() {

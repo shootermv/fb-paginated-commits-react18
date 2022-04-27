@@ -18,7 +18,7 @@ export default function ModeToggle() {
     }
   };
   return (
-    <label class="theme-switch" for="theme-checkbox">
+    <label className="theme-switch" htmlFor="theme-checkbox">
       <input
         type="checkbox"
         onChange={changeMode}
