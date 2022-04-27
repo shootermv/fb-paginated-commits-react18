@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./SideNav.css";
 export default function SideNav() {
   return (
     <nav>
       <ul>
         <li>
-          <Link to="/">Commits</Link>
+          <NavLink to="/">Commits</NavLink>
         </li>
         <li>
-          <Link to="/prs">Prs</Link>
+          <NavLink to="/prs">Prs</NavLink>
         </li>
       </ul>
     </nav>
