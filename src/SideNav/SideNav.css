@@ -1,0 +1,19 @@
+@media only screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+}
+nav {
+  border-right: 1px solid grey;
+  padding: 20px;
+}
+nav ul,
+li {
+  list-style-type: none;
+  padding: 0;
+}
+nav li {
+  margin-bottom: 5px;
+}
+nav li a {
+}

@@ -1,11 +1,16 @@
+import { Link } from "react-router-dom";
 import "./SideNav.css";
 export default function SideNav() {
   return (
-    <aside>
+    <nav>
       <ul>
-        <li>commits</li>
-        <li>prs</li>
+        <li>
+          <Link to="/">Commits</Link>
+        </li>
+        <li>
+          <Link to="/prs">Prs</Link>
+        </li>
       </ul>
-    </aside>
+    </nav>
   );
 }
