@@ -1,12 +1,14 @@
 import "./styles.css";
-import { lazy } from "react";
+import { Suspense, lazy } from "react";
+import Loader from "./Loader";
 import { Routes, Route } from "react-router-dom";
-import { Commits as CommitsPage } from "./Pages/Commits";
+
 import Header from "./Header";
 import Footer from "./Footer/Footer";
 import SideNav from "./SideNav";
-//const PrsPage = lazy(() => import("./Pages/Prs"));
-import PrsPage from "./Pages/Prs";
+import { Commits as CommitsPage } from "./Pages/Commits";
+const PrsPage = lazy(() => import("./Pages/Prs"));
+
 export default function App() {
   return (
     <div className="MainWrap">
@@ -16,7 +18,14 @@ export default function App() {
         <main>
           <Routes>
             <Route path="/" element={<CommitsPage />} />
-            <Route path="/prs" element={<PrsPage />} />
+            <Route
+              path="/prs"
+              element={
+                <Suspense fallback={<Loader />}>
+                  <PrsPage />
+                </Suspense>
+              }
+            />
           </Routes>
         </main>
         <Footer />
