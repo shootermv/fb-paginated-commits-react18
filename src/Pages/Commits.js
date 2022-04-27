@@ -1,12 +1,12 @@
 import List from "../List";
 import useFetchData from "../useFetchData";
-import loader from "../loader.gif";
+import Loader from "../Loader";
 export function Commits() {
   const { commits, error, loading } = useFetchData();
   if (loading)
     return (
       <div className="Page">
-        <img src={loader} alt={"icon"} />
+        <Loader />
       </div>
     );
   if (error)
