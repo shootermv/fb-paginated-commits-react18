@@ -1,18 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBell
-  /*faListAlt,
-  faMoon,
-  faSun*/
-} from "@fortawesome/free-regular-svg-icons";
-//import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBell } from "@fortawesome/free-regular-svg-icons";
 
 import "./Header.css";
 import ModeToggle from "./ModeToggle/ModeToggle";
+import SideNavToggle from "./SideNavToggle/SideNavToggle";
 export default function Header() {
   return (
     <header>
-      <aside>&nbsp;</aside>
+      <aside>
+        <SideNavToggle />
+      </aside>
       <div className="header-center">
         <FontAwesomeIcon icon={faBell} />
         REACT NEWS

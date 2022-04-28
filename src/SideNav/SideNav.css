@@ -1,6 +1,14 @@
 @media only screen and (max-width: 600px) {
-  nav {
+  nav:not(.open) {
     display: none;
+  }
+  nav.open {
+    /*display: none;*/
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
   }
 }
 nav {

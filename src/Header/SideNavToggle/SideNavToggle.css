@@ -1,0 +1,12 @@
+.menu-switch {
+  display: none;
+}
+.menu-switch input {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .menu-switch {
+    display: block;
+    cursor: pointer;
+  }
+}

@@ -1,5 +1,5 @@
 import "./styles.css";
-import { Suspense, lazy } from "react";
+import { Suspense, lazy, useState } from "react";
 import Loader from "./Loader";
 import { Routes, Route } from "react-router-dom";
 
@@ -10,9 +10,11 @@ import { Commits as CommitsPage } from "./Pages/Commits";
 const PrsPage = lazy(() => import("./Pages/Prs"));
 
 export default function App() {
+  const [menuShown, setMenuShown] = useState(false);
+  const toggleMenu = () => setMenuShown(!menuShown);
   return (
     <div className="MainWrap">
-      <SideNav />
+      <SideNav menuShown={menuShown} />
       <div className="App">
         <Header />
         <main>

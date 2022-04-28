@@ -1,3 +1,6 @@
 .theme-switch input {
   display: none;
 }
+.theme-switch {
+  cursor: pointer;
+}

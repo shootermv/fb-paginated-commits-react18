@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 import "./SideNav.css";
-export default function SideNav() {
+export default function SideNav({ menuShown }) {
   return (
-    <nav>
+    <nav className={menuShown ? "open" : ""}>
       <ul>
         <li>
           <NavLink to="/">Commits</NavLink>
