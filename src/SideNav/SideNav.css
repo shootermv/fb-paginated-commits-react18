@@ -6,6 +6,7 @@
 nav {
   border-right: 1px solid grey;
   padding: 20px;
+  background: var(--bg-color);
 }
 nav ul,
 li {
