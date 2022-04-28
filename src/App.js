@@ -4,7 +4,7 @@ import Loader from "./Loader";
 import { Routes, Route } from "react-router-dom";
 
 import Header from "./Header";
-import Footer from "./Footer/Footer";
+import Footer from "./Layout/Footer/Footer";
 import SideNav from "./SideNav";
 import { Commits as CommitsPage } from "./Pages/Commits";
 const PrsPage = lazy(() => import("./Pages/Prs"));
