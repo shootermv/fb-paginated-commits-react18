@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Header from "./Layout/Header";
 import Footer from "./Layout/Footer";
-import SideNav from "./SideNav";
+import SideNav from "./Layout/SideNav";
 import { Commits as CommitsPage } from "./Pages/Commits";
 const PrsPage = lazy(() => import("./Pages/Prs"));
 
