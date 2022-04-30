@@ -2,10 +2,20 @@
   nav:not(.open) {
     display: none;
   }
+  .backdrop {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0;
+    background: #333;
+    opacity: 0.5;
+  }
   nav.open {
     /*display: none;*/
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 0px;
     bottom: 0px;
     left: 0px;

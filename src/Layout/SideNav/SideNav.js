@@ -1,16 +1,22 @@
 import { NavLink } from "react-router-dom";
 import "./SideNav.css";
-export default function SideNav({ menuShown }) {
+import LayoutCtx from "../../Contexts/LayoutCtx";
+import { useContext } from "react";
+export default function SideNav() {
+  const { toggleMenu, menuShown } = useContext(LayoutCtx);
   return (
-    <nav className={menuShown ? "open" : ""}>
-      <ul>
-        <li>
-          <NavLink to="/">Commits</NavLink>
-        </li>
-        <li>
-          <NavLink to="/prs">Prs</NavLink>
-        </li>
-      </ul>
-    </nav>
+    <>
+      {menuShown && <div className="backdrop" onClick={toggleMenu} />}
+      <nav className={menuShown ? "open" : ""}>
+        <ul>
+          <li>
+            <NavLink to="/">Commits</NavLink>
+          </li>
+          <li>
+            <NavLink to="/prs">Prs</NavLink>
+          </li>
+        </ul>
+      </nav>
+    </>
   );
 }

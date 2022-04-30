@@ -15,7 +15,7 @@ export default function App() {
   return (
     <LayoutCtx.Provider value={{ toggleMenu, menuShown }}>
       <div className="MainWrap">
-        <SideNav menuShown={menuShown} />
+        <SideNav />
         <div className="App">
           <Header />
           <main>
