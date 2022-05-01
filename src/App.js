@@ -8,8 +8,7 @@ import Footer from "./Layout/Footer";
 import SideNav from "./Layout/SideNav";
 import { Commits as CommitsPage } from "./Pages/Commits";
 const PrsPage = lazy(() => import("./Pages/Prs"));
-
-export default function App() {
+export function Layout({ children }) {
   const [menuShown, setMenuShown] = useState(false);
   const toggleMenu = () => setMenuShown(!menuShown);
   return (
@@ -18,22 +17,27 @@ export default function App() {
         <SideNav />
         <div className="App">
           <Header />
-          <main>
-            <Routes>
-              <Route path="/" element={<CommitsPage />} />
-              <Route
-                path="/prs"
-                element={
-                  <Suspense fallback={<Loader />}>
-                    <PrsPage />
-                  </Suspense>
-                }
-              />
-            </Routes>
-          </main>
+          <main>{children}</main>
           <Footer />
         </div>
       </div>
     </LayoutCtx.Provider>
+  );
+}
+export default function App() {
+  return (
+    <Layout>
+      <Routes>
+        <Route path="/" element={<CommitsPage />} />
+        <Route
+          path="/prs"
+          element={
+            <Suspense fallback={<Loader />}>
+              <PrsPage />
+            </Suspense>
+          }
+        />
+      </Routes>
+    </Layout>
   );
 }
