@@ -11,6 +11,8 @@
     "@fortawesome/react-fontawesome": "0.1.18",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "13.0.0",
+    "@testing-library/react-hooks": "8.0.0",
+    "msw": "0.39.2",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-router-dom": "6.3.0",
