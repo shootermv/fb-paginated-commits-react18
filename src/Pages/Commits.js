@@ -2,7 +2,7 @@ import List from "../List";
 import useFetchData from "../useFetchData";
 import Loader from "../Loader";
 export function Commits() {
-  const { commits, error, loading } = useFetchData();
+  const { commits, error, loading } = useFetchData("commits");
   if (loading)
     return (
       <div className="Page">

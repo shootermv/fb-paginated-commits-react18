@@ -3,13 +3,13 @@ import mockData from "./mock.json";
 import { processData } from "./util";
 
 // custom hook usage
-const useFetchData = () => {
+const useFetchData = (url) => {
   const [commits, setCommits] = useState([]);
   const [loading, setLoading] = useState("");
   const [error, setError] = useState(false);
   useEffect(() => {
     setLoading(true);
-    fetch(`https://api.github.com/repos/facebook/react/commits`)
+    fetch(`https://api.github.com/repos/facebook/react/${url}`)
       .then((d) => d.json())
       .then((d) => {
         //console.log(d.message);
