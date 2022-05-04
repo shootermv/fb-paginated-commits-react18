@@ -4,7 +4,7 @@ import { processData } from "./util";
 
 // custom hook usage
 const useFetchData = (url) => {
-  const [commits, setCommits] = useState([]);
+  const [data, setData] = useState([]);
   const [loading, setLoading] = useState("");
   const [error, setError] = useState(false);
   useEffect(() => {
@@ -16,10 +16,10 @@ const useFetchData = (url) => {
         if (d?.message?.includes("limit")) {
           console.log(d.message);
           // throw Error("Err");
-          setCommits(processData(mockData));
+          setData(processData(mockData));
           return;
         }
-        setCommits(processData(d)); // can be replaced by "mockData"
+        setData(processData(d)); // can be replaced by "mockData"
       })
       .catch((err) => {
         setError("some error!");
@@ -28,6 +28,6 @@ const useFetchData = (url) => {
         setLoading(false);
       });
   }, []);
-  return { commits, loading, error };
+  return { data, loading, error };
 };
 export default useFetchData;
