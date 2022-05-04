@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import mockData from "./mock.json";
-import { processData } from "./util";
 
 // custom hook usage
-const useFetchData = (url) => {
+const useFetchData = (url, processData) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState("");
   const [error, setError] = useState(false);

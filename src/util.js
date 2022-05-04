@@ -8,15 +8,16 @@ export function formatMessage(str, term, showMore) {
   if (showMore) return str;
   return `${str.slice(0, 100)}`;
 }
-export function processData(d) {
+export function processCommitData(d) {
   if (!Array.isArray(d)) return [];
   let res = d.map((obj, idx) => {
-    obj.idx = idx + 1;
-    obj.link = obj.html_url;
-    obj.title = obj.commit.message;
-    obj.who = obj?.author;
-    obj.date = obj.commit.committer.date;
-    return obj;
+    return {
+      idx: idx + 1,
+      link: obj.html_url,
+      title: obj.commit.message,
+      who: obj?.author,
+      date: obj.commit.committer.date
+    };
   });
   return res;
 }
