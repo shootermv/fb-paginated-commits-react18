@@ -1,5 +1,8 @@
 @media only screen and (max-width: 360px) {
   .dt {
-    /*display: none;*/
+    color: var(--secondary-color);
   }
+}
+.dt {
+  color: var(--secondary-color);
 }

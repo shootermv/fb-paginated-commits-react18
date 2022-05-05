@@ -13,6 +13,7 @@ body,
   --header-footer-bg-color: #04aa6d;
   --header-footer-font-color: #fff;
   --secondary-color: #333;
+  --secondary-text-color: #333;
   --font-color: #000;
   --bg-color: #fff;
   --heading-color: #292922;
@@ -22,6 +23,7 @@ body,
   --header-footer-bg-color: #9a97f3;
   --header-footer-font-color: #fff;
   --secondary-color: #818cab;
+  --secondary-text-color: #fff;
   --font-color: #e1e1ff;
   --bg-color: #161625;
   --heading-color: #818cab;
