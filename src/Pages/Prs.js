@@ -1,6 +1,7 @@
 import useFetchData from "../useFetchData";
 import Loader from "../Loader";
 import ErrorCmp from "../Error";
+import PullsList from "../PullsList";
 
 export default function Prs() {
   const { data: pulls, error, loading } = useFetchData("pulls", (data) =>
@@ -9,7 +10,13 @@ export default function Prs() {
   return (
     <div className="App">
       <h1>Pull Requests</h1>
-      {loading ? <Loader /> : error ? <ErrorCmp /> : pulls.length}
+      {loading ? (
+        <Loader />
+      ) : error ? (
+        <ErrorCmp />
+      ) : (
+        <PullsList pulls={pulls} />
+      )}
     </div>
   );
 }
