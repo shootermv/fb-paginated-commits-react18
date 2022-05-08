@@ -8,7 +8,7 @@ export default function Prs() {
     data.slice(0, 5)
   );
   return (
-    <div className="App">
+    <div>
       <h1>Pull Requests</h1>
       {loading ? (
         <Loader />

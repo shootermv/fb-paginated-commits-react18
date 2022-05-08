@@ -9,7 +9,7 @@ export function Commits() {
     processCommitData
   );
   return (
-    <div className="Page">
+    <div>
       {loading ? <Loader /> : error ? <ErrorCmp /> : <List commits={commits} />}
     </div>
   );

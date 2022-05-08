@@ -1,0 +1,14 @@
+.accordion .panel header {
+  background: #eee;
+  padding: 5px;
+  border: 1px solid #e1e1e1;
+  cursor: pointer;
+}
+.accordion .panel main:not(.open) {
+  display: none;
+}
+.accordion .panel main {
+  background: #fff;
+  padding: 5px 20px;
+  text-align: left;
+}

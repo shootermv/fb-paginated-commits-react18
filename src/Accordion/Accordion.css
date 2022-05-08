@@ -1,0 +1,21 @@
+.accordion {
+  border: 1px solid black;
+}
+.caret {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  border: 5px solid transparent;
+}
+.caret.down {
+  border-top-color: black;
+}
+.caret.right {
+  border-left-color: black;
+}
+.caret.up {
+  border-bottom-color: black;
+}
+.caret.left {
+  border-right-color: black;
+}

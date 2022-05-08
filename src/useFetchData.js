@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import mockCommitsData from "./mockCommits.json";
-
+import mockPrsData from "./mockPr.json";
 // custom hook usage
 const useFetchData = (url, processData) => {
   const [data, setData] = useState([]);
@@ -15,7 +15,9 @@ const useFetchData = (url, processData) => {
         if (d?.message?.includes("limit")) {
           console.log(d.message);
           // throw Error("Err");
-          setData(processData(mockCommitsData));
+          setData(
+            processData(url === "commits" ? mockCommitsData : mockPrsData)
+          );
           return;
         }
         setData(processData(d)); // can be replaced by "mockData"
