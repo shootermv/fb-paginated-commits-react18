@@ -6,7 +6,7 @@ import ModeToggle from "./ModeToggle/ModeToggle";
 import SideNavToggle from "./SideNavToggle/SideNavToggle";
 export default function Header() {
   return (
-    <header>
+    <header className="main">
       <aside>
         <SideNavToggle />
       </aside>
