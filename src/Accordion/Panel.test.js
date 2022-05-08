@@ -17,8 +17,8 @@ describe("Panel", () => {
         <Panel title={title}>{child}</Panel>
       </div>
     );
-    expect(getByTestId("panel-main")).not.toBeVisible();
-    // debug()
+    expect(getByTestId("panel-main").className).not.toBe('open');
+    //debug()
   });
   test("panel should show content text if it open", () => {
     let title = "hi";
@@ -31,8 +31,8 @@ describe("Panel", () => {
         </Panel>
       </div>
     );
-    expect(getByTestId("panel-main")).toBeVisible();
-    //debug()
+    expect(getByTestId("panel-main").className).toBe('open');
+   // debug()
   });
 
   test("panel should call setPanelOpen func when header clicked", () => {
