@@ -4,7 +4,7 @@ import { marked } from "marked";
 import "./PullsList.css";
 export default function PullsList({ pulls }) {
   return (
-    <Accordion>
+    <div className="pulls-container"><Accordion>
       {pulls.map((pr) => {
         return (
           <Panel key={pr.id} title={pr.title}>
@@ -12,6 +12,6 @@ export default function PullsList({ pulls }) {
           </Panel>
         );
       })}
-    </Accordion>
+    </Accordion></div>
   );
 }
