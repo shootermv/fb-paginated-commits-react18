@@ -5,10 +5,17 @@
   cursor: pointer;
 }
 .accordion .panel main:not(.open) {
-  display: none;
+  /*display: none;*/
 }
 .accordion .panel main {
   background: #fff;
+
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.accordion .panel main.closed {
+  max-height: 0;
+}
+.accordion .panel main div {
   padding: 5px 20px;
-  text-align: left;
 }
