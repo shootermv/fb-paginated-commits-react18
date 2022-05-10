@@ -21,7 +21,7 @@ export default function Panel({
           setPanelOpen(panelIdx);
         }}
       >
-        <i className="caret right" />
+        <i className={`caret ${open ? "down" : "right"}`} />
         {title}
       </header>
       <main ref={ref} data-testid="panel-main" className={open ? "open" : ""}>
