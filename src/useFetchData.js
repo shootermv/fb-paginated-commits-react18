@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import mockCommitsData from "./mockCommits.json";
 import mockPrsData from "./mockPr.json";
 // custom hook usage
-const useFetchData = (url, processData) => {
+const useFetchData = (url, processData = dta => dta) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
