@@ -4,8 +4,9 @@ import mockPrsData from "./mockPr.json";
 // custom hook usage
 const useFetchData = (url, processData) => {
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState("");
-  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  if (!url) return { data, loading, error: "must pass url param!" }
   useEffect(() => {
     setLoading(true);
     fetch(`https://api.github.com/repos/facebook/react/${url}`)
