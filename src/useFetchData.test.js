@@ -1,5 +1,14 @@
 import { renderHook } from "@testing-library/react-hooks";
 import useFetchData from "./useFetchData"
+beforeEach(() => {
+  jest.spyOn(global, 'fetch').mockResolvedValue({
+    json: jest.fn().mockResolvedValue([{nm: 'vova'}])
+  })
+});
+
+afterEach(() => {
+  jest.restoreAllMocks();
+});
 //import { rest } from "msw";
 test("should return error if 'url' params not passed", () => {
   const {result} = renderHook(() => useFetchData())
@@ -10,4 +19,9 @@ test("should return loading set to 'true' if 'url' params passed", () => {
   expect(result.current.loading).toBeTruthy();
   expect(result.current.error).toBeNull()
   expect(result.current.data).toEqual([])
+});
+test("should return data",async () => {
+  const {result, waitForNextUpdate} = renderHook(() =>  useFetchData('zzz'))
+  await waitForNextUpdate()
+  expect(result.current.data).toEqual([{nm: 'vova'}])
 });
