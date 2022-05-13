@@ -5,7 +5,9 @@ test("should return error if 'url' params not passed", () => {
   const {result} = renderHook(() => useFetchData())
   expect(result.current.error).toBe('must pass url param!');
 });
-test("should return set loading to 'true' if 'url' params passed", () => {
+test("should return loading set to 'true' if 'url' params passed", () => {
   const {result} = renderHook(() => useFetchData('zzz'))
   expect(result.current.loading).toBeTruthy();
+  expect(result.current.error).toBeNull()
+  expect(result.current.data).toEqual([])
 });
