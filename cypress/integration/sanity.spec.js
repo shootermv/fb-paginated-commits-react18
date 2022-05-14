@@ -3,7 +3,6 @@
 
 describe('example to-do app', () => {
   beforeEach(() => {
-
     cy.visit('http://localhost:3000')
   })
 
@@ -11,6 +10,10 @@ describe('example to-do app', () => {
     cy.get('h1').should('have.text', "Recent Commits")
   })
 
+  it('displays fisrt 5 Commits', () => {
+    cy.get('.data-table-row')
+    .should('have.length', 5)
+  })
   
   /*
   context('with a checked task', () => {
