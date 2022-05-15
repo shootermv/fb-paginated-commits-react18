@@ -17,7 +17,7 @@
 }
 
 input[type="search"] {
-  background: #eee;
+  background: var( --secondary-bg-color);
   margin-bottom: 20px;
   border-radius: 4px;
   height: 40px;

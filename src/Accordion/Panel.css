@@ -1,12 +1,13 @@
 .accordion .panel header {
-  background: #eee;
+  background: var( --secondary-bg-color);
+  color: var(--secondary-text-color);
   padding: 5px;
   border: 1px solid #e1e1e1;
   cursor: pointer;
 }
 
 .accordion .panel main {
-  background: #fff;
+  background: var( --bg-color);
 
   transition: all 0.3s;
   overflow: hidden;

@@ -8,14 +8,14 @@
   border: 5px solid transparent;
 }
 .caret.down {
-  border-top-color: black;
+  border-top-color:  var(--secondary-text-color);
 }
 .caret.right {
-  border-left-color: black;
+  border-left-color: var(--secondary-text-color);
 }
 .caret.up {
-  border-bottom-color: black;
+  border-bottom-color: var(--secondary-text-color);
 }
 .caret.left {
-  border-right-color: black;
+  border-right-color: var(--secondary-text-color);
 }

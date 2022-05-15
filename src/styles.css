@@ -16,7 +16,7 @@ body,
   --secondary-text-color: #333;
   --font-color: #000;
   --bg-color: #fff;
-  --heading-color: #292922;
+  --secondary-bg-color: #eee;
 }
 [data-theme="dark"] {
   --primary-color: #9a97f3;
@@ -26,7 +26,7 @@ body,
   --secondary-text-color: #fff;
   --font-color: #e1e1ff;
   --bg-color: #161625;
-  --heading-color: #818cab;
+  --secondary-bg-color: #818cab;
 }
 .MainWrap {
   flex: 1;
