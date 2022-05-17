@@ -1,8 +1,6 @@
-import loader from "./loader.gif";
+import "./Loader.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 export default function Loader() {
-  return (
-    <>
-      <img src={loader} alt={"icon"} />
-    </>
-  );
+  return <FontAwesomeIcon icon={faSpinner} className={"fa-spin"} />;
 }
