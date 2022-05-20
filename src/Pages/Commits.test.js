@@ -1,4 +1,5 @@
 import { render, cleanup, waitFor } from "@testing-library/react";
+import '@testing-library/jest-dom/extend-expect';
 import { Commits } from "./Commits";
 
 beforeEach(() => {
