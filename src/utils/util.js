@@ -11,12 +11,13 @@ export function formatMessage(str, term, showMore) {
 export function processCommitData(d) {
   if (!Array.isArray(d)) return [];
   let res = d.map((obj, idx) => {
+    const {message: title, committer: {date}} = obj.commit;
     return {
       idx: idx + 1,
       link: obj.html_url,
-      title: obj.commit.message,
+      title,
       who: obj?.author,
-      date: obj.commit.committer.date
+      date
     };
   });
   return res;
