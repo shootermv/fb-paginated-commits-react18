@@ -15,4 +15,4 @@ Single Page App Displaying Recent Commits of [React](https://reactjs.org) Repo
 - react testing lib
 - cypress
 
-[see live site at netlify](https://csb-rh0ycs.netlify.app/)
+[see live site at netlify](https://csb-rh0ycs.netlify.app)
