@@ -6,12 +6,14 @@ Single Page App Displaying Recent Commits of [React](https://reactjs.org) Repo
 
 # Demonstrating:
 
-- Loading data from github api
+- Fetching data from github api
 - Custom Hook Use
 - Client Side List Pagination
 - Client Side List Filtering
+- Lazy loading 
 
 # Tools
+- react 18
 - react testing lib
 - cypress
 
