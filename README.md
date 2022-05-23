@@ -1,3 +1,4 @@
+![ci](https://github.com/shootermv/fb-paginated-commits-react18/actions/workflows/node.js.yml/badge.svg)
 # Playing Around With React18
 
 ![gif](./commits.gif)
