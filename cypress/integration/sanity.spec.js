@@ -14,7 +14,12 @@ describe('example to-do app', () => {
     cy.get('.data-table-row')
     .should('have.length', 5)
   })
-  
+  it('clicking PRs link shuold navigate to "PRs"', () => {
+    cy.get("[data-testid=sidebar] a")
+      .eq(1)
+      .click();
+    cy.location("pathname", { timeout: 60000 }).should("include", "/prs");
+  })
   /*
   context('with a checked task', () => {
     beforeEach(() => {

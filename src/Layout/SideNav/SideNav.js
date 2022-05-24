@@ -7,7 +7,7 @@ export default function SideNav() {
   return (
     <>
       {menuShown && <div className="backdrop" onClick={toggleMenu} />}
-      <nav className={menuShown ? "open" : ""}>
+      <nav className={menuShown ? "open" : ""} data-testid="sidebar">
         <ul>
           <li>
             <NavLink to="/">Commits</NavLink>
