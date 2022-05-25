@@ -1,6 +1,6 @@
 import useFetchData from "../useFetchData";
 import Loader from "../Loader";
-import ErrorCmp from "../Error";
+import ErrorCmp from "../components/Error";
 import PullsList from "../PullsList";
 
 export default function Prs() {
