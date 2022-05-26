@@ -3,7 +3,7 @@
 
 ![gif](./commits.gif)
 
-Single Page App Displaying Recent Commits nd PRs of [React](https://reactjs.org) Repo  
+Single Page App Displaying Recent Commits and PRs of [React](https://reactjs.org) Repo  
 
 #
 
