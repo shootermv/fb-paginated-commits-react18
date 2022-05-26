@@ -3,8 +3,8 @@
 
 ![gif](./commits.gif)
 
-Single Page App Displaying Recent Commits of [React](https://reactjs.org) Repo
-
+Single Page App Displaying Recent Commits nd PRs of [React](https://reactjs.org) Repo   
+[see live site at netlify](https://csb-rh0ycs.netlify.app)   
 # Demonstrating:
 
 - Fetching data from github api
@@ -13,9 +13,16 @@ Single Page App Displaying Recent Commits of [React](https://reactjs.org) Repo
 - Client Side List Filtering
 - Lazy loading 
 
-# Tools
+# UI
+Support for mobile
+Support for theming
+
+# CI
+github actions
+
+# Tech Stack
 - react 18
 - react testing lib
 - cypress
 
-[see live site at netlify](https://csb-rh0ycs.netlify.app)
+
