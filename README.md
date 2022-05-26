@@ -3,7 +3,10 @@
 
 ![gif](./commits.gif)
 
-Single Page App Displaying Recent Commits nd PRs of [React](https://reactjs.org) Repo   
+Single Page App Displaying Recent Commits nd PRs of [React](https://reactjs.org) Repo  
+
+#
+
 [see live site at netlify](https://csb-rh0ycs.netlify.app)   
 # Demonstrating:
 
@@ -14,11 +17,11 @@ Single Page App Displaying Recent Commits nd PRs of [React](https://reactjs.org)
 - Lazy loading 
 
 # UI
-Support for mobile
-Support for theming
+- Support for mobile
+- Support for theming
 
 # CI
-github actions
+- github actions
 
 # Tech Stack
 - react 18
