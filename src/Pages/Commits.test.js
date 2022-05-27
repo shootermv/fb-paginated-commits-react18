@@ -39,3 +39,20 @@ test("should render some records", async () => {
     expect(getByTestId("data-table")).toBeInTheDocument();
   });
 });
+
+test("should show loader when loading and hide after request ended", async () => {
+  const record = {
+    html_url: "hh",
+    author: { avatar_url: "uuu", login: "jjj" },
+    commit: { committer: { date: "2022-04-03T01:41:49Z" }, message: "jo" },
+  };
+
+  jest.spyOn(global, "fetch").mockResolvedValue({
+    json: jest.fn().mockResolvedValue([]),
+  });
+  const { debug, container } = render(<Commits />);
+  expect(container.querySelector('svg')).toBeInTheDocument()
+  await waitFor(() => {
+    expect(container.querySelector('svg')).not.toBeInTheDocument()
+  })
+});
