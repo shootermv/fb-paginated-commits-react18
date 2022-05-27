@@ -1,4 +1,4 @@
-import List from "../List";
+import List from "../components/List";
 import useFetchData from "../useFetchData";
 import Loader from "../Loader";
 import ErrorCmp from "../components/Error";
@@ -10,6 +10,7 @@ export function Commits() {
   );
   return (
     <div>
+      <h1>Recent Commits</h1>
       {loading ? <Loader /> : error ? <ErrorCmp /> : <List commits={commits} />}
     </div>
   );

@@ -2,9 +2,8 @@ import { useEffect, useMemo, useState } from "react";
 import Pagination from "./Pagination";
 import Message from "./Message";
 import AuthorLink from "./AuthorLink";
-
-import "./List.css";
 import DateCmp from "./DateCmp";
+import "./List.css";
 
 export default function List({ commits }) {
   const [term, setTerm] = useState("");
@@ -26,7 +25,6 @@ export default function List({ commits }) {
 
   return (
     <>
-      <h1>Recent Commits</h1>
       <input
         type="search"
         data-testid="filter-input"
