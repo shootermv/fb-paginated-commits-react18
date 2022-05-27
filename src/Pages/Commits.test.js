@@ -40,12 +40,7 @@ test("should render some records", async () => {
   });
 });
 
-test("should show loader when loading and hide after request ended", async () => {
-  const record = {
-    html_url: "hh",
-    author: { avatar_url: "uuu", login: "jjj" },
-    commit: { committer: { date: "2022-04-03T01:41:49Z" }, message: "jo" },
-  };
+test("should show loader when loading and hide it after request ended", async () => {
 
   jest.spyOn(global, "fetch").mockResolvedValue({
     json: jest.fn().mockResolvedValue([]),
