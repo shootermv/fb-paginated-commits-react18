@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { FC, ReactNode, useState } from "react";
 import LayoutCtx from "../Contexts/LayoutCtx";
 import Header from "./Header";
 import Footer from "./Footer";
 import SideNav from "./SideNav";
-export default function Layout({ children }) {
+
+type Props = { children: ReactNode }
+
+const Layout :FC<Props> = ({children}) => {
   const [menuShown, setMenuShown] = useState(false);
   const toggleMenu = () => setMenuShown(!menuShown);
   return (
@@ -19,3 +22,5 @@ export default function Layout({ children }) {
     </LayoutCtx.Provider>
   );
 }
+
+export default Layout;
