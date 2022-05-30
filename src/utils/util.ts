@@ -1,4 +1,4 @@
-export function formatMessage(str, term, showMore) {
+export function formatMessage(str: string, term: string, showMore: boolean) {
   if (term) {
     str = str.replace(
       new RegExp(term, "ig"),
@@ -8,7 +8,7 @@ export function formatMessage(str, term, showMore) {
   if (showMore) return str;
   return `${str.slice(0, 100)}`;
 }
-export function processCommitData(d) {
+export function processCommitData(d: any) {
   if (!Array.isArray(d)) return [];
   let res = d.map((obj, idx) => {
     const {message: title, committer: {date}} = obj.commit;
