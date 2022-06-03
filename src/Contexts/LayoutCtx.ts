@@ -1,2 +1,6 @@
 import { createContext } from "react";
-export default createContext({});
+export interface LayoutContextInterface {
+    toggleMenu: any;
+    menuShown: boolean;
+}
+export default createContext<LayoutContextInterface | null>(null);
