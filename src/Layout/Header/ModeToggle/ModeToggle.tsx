@@ -6,7 +6,7 @@ export default function ModeToggle() {
   const [currentTheme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : null
   );
-  const changeMode = (e) => {
+  const changeMode = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.checked) {
       document.documentElement.setAttribute("data-theme", "dark");
       setTheme("dark");
