@@ -7,18 +7,17 @@ export default function ModeToggle() {
     localStorage.getItem("theme") ? localStorage.getItem("theme") : null
   );
   const changeMode = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.checked) {
-      document.documentElement.setAttribute("data-theme", "dark");
-      setTheme("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.setAttribute("data-theme", "light");
-      setTheme("light");
-      localStorage.setItem("theme", "light");
-    }
+    const currentTheme = e.target.checked ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", currentTheme);
+    setTheme(currentTheme);
+    localStorage.setItem("theme", currentTheme);
   };
   return (
-    <label className="theme-switch" htmlFor="theme-checkbox">
+    <label
+      className="theme-switch"
+      htmlFor="theme-checkbox"
+      data-testid="theme-toggle"
+    >
       <input
         type="checkbox"
         onChange={changeMode}

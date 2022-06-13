@@ -2,7 +2,7 @@ import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Message from "./Message";
 
-test("should display message", () => {
+test("should display message text", () => {
   let title = "hi";
 
   const { debug, getByTestId } = render(
@@ -11,7 +11,7 @@ test("should display message", () => {
   expect(getByTestId("commit-message").textContent).toContain(title);
   //debug();
 });
-test("should display 'show more' ofter end of long message", () => {
+test("should display 'show more' after end of long message", () => {
   let title = new Array(101).fill("1").join("");
 
   const { debug, getByTestId } = render(
