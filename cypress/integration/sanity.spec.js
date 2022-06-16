@@ -14,7 +14,8 @@ describe('example to-do app', () => {
     cy.get('.data-table-row')
     .should('have.length', 5)
   })
-  it('clicking PRs link shuold navigate to "PRs"', () => {
+
+  it('clicking "PRs" link shoold navigate to "PRs" page', () => {
     cy.get("[data-testid=sidebar] a")
       .eq(1)
       .click();
