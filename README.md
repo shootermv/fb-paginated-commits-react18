@@ -7,7 +7,7 @@ Single Page App Displaying Recent Commits and PRs of [React](https://reactjs.org
 
 #
 
-[see live site at netlify](https://csb-rh0ycs.netlify.app)   
+[see live site at netlify](https://react18play.netlify.app/)   
 # Demonstrating:
 
 - Fetching data from github api
