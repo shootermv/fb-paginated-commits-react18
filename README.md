@@ -15,6 +15,7 @@ Single Page App Displaying Recent Commits and PRs of [React](https://reactjs.org
 - Client Side List Pagination
 - Client Side List Filtering
 - Lazy loading 
+- Dark theme
 
 # UI
 - Support for mobile
