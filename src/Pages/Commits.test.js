@@ -41,7 +41,6 @@ test("should render some records", async () => {
 });
 
 test("should show loader when loading and hide it after request ended", async () => {
-
   jest.spyOn(global, "fetch").mockResolvedValue({
     json: jest.fn().mockResolvedValue([]),
   });
