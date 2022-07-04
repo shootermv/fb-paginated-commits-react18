@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import LayoutCtx from "../../../Contexts/LayoutCtx";
+import LayoutCtx, { LayoutContextInterface } from "../../../Contexts/LayoutCtx";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./SideNavToggle.css";
 import { useContext } from "react";
 export default function SideNavToggle() {
-  const { toggleMenu, menuShown } = useContext(LayoutCtx);
+  const { toggleMenu, menuShown } = useContext(LayoutCtx) as LayoutContextInterface;
   return (
     <label className="menu-switch" htmlFor="menu-checkbox">
       <input
