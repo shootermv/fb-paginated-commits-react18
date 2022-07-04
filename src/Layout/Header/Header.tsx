@@ -3,7 +3,7 @@ import { faBell } from "@fortawesome/free-regular-svg-icons";
 
 import "./Header.css";
 import ModeToggle from "./ModeToggle";
-import SideNavToggle from "./SideNavToggle/SideNavToggle";
+import SideNavToggle from "./SideNavToggle";
 export default function Header() {
   return (
     <header className="main">
