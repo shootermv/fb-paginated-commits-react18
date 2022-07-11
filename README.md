@@ -24,9 +24,9 @@ Single Page App Displaying Recent Commits and PRs of [React](https://reactjs.org
 # CI
 - github actions
 
-# Tech Stack
+# Tools
 - react 18
-- react testing lib
-- cypress
+- unit tests [react testing library](https://testing-library.com/)
+- e2e tests [cypress](https://www.cypress.io/)
 
 
