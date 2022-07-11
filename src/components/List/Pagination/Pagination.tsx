@@ -5,6 +5,11 @@ export default function Pagination({
   setCurrentPage,
   pageSize,
   records
+}: {
+  currentPage: number;
+  setCurrentPage: (page: number) => void;
+  pageSize: number;
+  records: number;
 }) {
   const totalPages = Math.ceil(records / pageSize);
 
