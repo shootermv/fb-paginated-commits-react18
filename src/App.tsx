@@ -1,5 +1,5 @@
 import "./styles.css";
-import { Suspense, lazy, useState } from "react";
+import { Suspense, lazy } from "react";
 import Loader from "./Loader";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
