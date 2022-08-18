@@ -18,11 +18,11 @@
     "@types/react-dom": "^18.0.5",
     "marked": "4.0.15",
     "msw": "0.44.2",
-    "react": "18.0.0",
-    "react-dom": "18.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-router-dom": "6.3.0",
     "react-scripts": "5.0.1",
-    "react-test-renderer": "18.1.0"
+    "react-test-renderer": "18.2.0"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
