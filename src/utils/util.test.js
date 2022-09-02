@@ -4,16 +4,16 @@ test("pass empty args", () => {
   expect(formatMessage("", "", false)).toBe("");
 });
 test("pass 10 chars long str", () => {
-  expect(formatMessage("0123456789", "", false).length).toBe(10);
+  expect(formatMessage("1".each(10), "", false).length).toBe(10);
 });
 test("pass 101 chars long str & showMore=false - should display only 100", () => {
   const showMore = false;
-  let str = new Array(101).fill("1").join("");
+  let str = "1".each(101);
   expect(formatMessage(str, "", showMore).length).toBe(100);
 });
-test("pass 101 chars long str & showMore=true - should display all chars", () => {
+test("if showMore=true - should display all chars", () => {
   const showMore = true;
-  let str = new Array(101).fill("1").join("");
+  let str = "1".each(101);
   expect(formatMessage(str, "", showMore).length).toBe(101);
 });
 test("pass filter - should wrap term with <b>", () => {
