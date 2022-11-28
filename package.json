@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@babel/runtime": "7.20.1",
-    "cypress": "11.0.1",
+    "cypress": "11.2.0",
     "typescript": "4.8.4",
     "wait-on": "6.0.1"
   },
