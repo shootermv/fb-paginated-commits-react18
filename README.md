@@ -29,4 +29,10 @@ Single Page App Displaying Recent Commits and PRs of [React](https://reactjs.org
 - unit tests [react testing library](https://testing-library.com/)
 - e2e tests [cypress](https://www.cypress.io/)
 
+# Development
+## To run:
+- open terminal
+- clone the project
+- `yarn` (or `yarn install`)
+- `yarn start`
 
