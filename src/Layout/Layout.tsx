@@ -1,12 +1,10 @@
-import { FC, ReactNode, useState } from "react";
+import { FC, ReactNode, useState, PropsWithChildren } from "react";
 import LayoutCtx from "../Contexts/LayoutCtx";
 import Header from "./Header";
 import Footer from "./Footer";
 import SideNav from "./SideNav";
 
-type Props = { children: ReactNode }
-
-const Layout :FC<Props> = ({children}) => {
+const Layout :FC<PropsWithChildren<{}>> = ({children}) => {
   const [menuShown, setMenuShown] = useState(false);
   const toggleMenu = () => setMenuShown(!menuShown);
   return (
