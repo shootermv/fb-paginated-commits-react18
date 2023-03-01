@@ -17,7 +17,7 @@
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.5",
     "marked": "4.2.12",
-    "msw": "1.0.0",
+    "msw": "1.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router-dom": "6.8.2",
