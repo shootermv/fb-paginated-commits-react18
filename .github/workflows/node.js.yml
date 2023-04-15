@@ -12,7 +12,7 @@ on:
 jobs:
   test:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
   # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 

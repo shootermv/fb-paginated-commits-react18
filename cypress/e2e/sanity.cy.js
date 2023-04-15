@@ -1,84 +1,24 @@
-/// <reference types="cypress" />
+const location =
+  'https://freecodecamp.org/learn/2022/responsive-web-design/learn-accessibility-by-building-a-quiz/step-2';
+const selectors = {
+  monacoTabs: '.monaco-editor-tabs',
+  signInButton: '[data-cy=sign-in-button]',
+  submitLowerJawButton: '[data-cy=submit-lowerJaw-button]',
+  checkLowerJawButton: '[data-cy=check-lowerJaw-button]',
+  resetCodeButton: '[data-cy=reset-code-button]',
+  instructionContainer: '.action-row-container'
+};
 
-
-describe('example to-do app', () => {
-  beforeEach(() => {
-    cy.visit('http://localhost:3000')
-  })
-
-  it('displays screen with title "Recent Commits"', () => {
-    cy.get('h1').should('have.text', "Recent Commits")
-  })
-
-  it('displays fisrt 5 Commits', () => {
-    cy.get('.data-table-row')
-    .should('have.length', 5)
-  })
-
-  it('clicking "PRs" link shoold navigate to "PRs" page', () => {
-    cy.get("[data-testid=sidebar] a")
-      .eq(1)
-      .click();
-    cy.location("pathname", { timeout: 60000 }).should("include", "/prs");
-  })
-  /*
-  context('with a checked task', () => {
-    beforeEach(() => {
-
-      cy.contains('Pay electric bill')
-        .parent()
-        .find('input[type=checkbox]')
-        .check()
-    })
-
-    it('can filter for uncompleted tasks', () => {
-      // We'll click on the "active" button in order to
-      // display only incomplete items
-      cy.contains('Active').click()
-
-      // After filtering, we can assert that there is only the one
-      // incomplete item in the list.
-      cy.get('.todo-list li')
-        .should('have.length', 1)
-        .first()
-        .should('have.text', 'Walk the dog')
-
-      // For good measure, let's also assert that the task we checked off
-      // does not exist on the page.
-      cy.contains('Pay electric bill').should('not.exist')
-    })
-
-    it('can filter for completed tasks', () => {
-      // We can perform similar steps as the test above to ensure
-      // that only completed tasks are shown
-      cy.contains('Completed').click()
-
-      cy.get('.todo-list li')
-        .should('have.length', 1)
-        .first()
-        .should('have.text', 'Pay electric bill')
-
-      cy.contains('Walk the dog').should('not.exist')
-    })
-
-    it('can delete all completed tasks', () => {
-      // First, let's click the "Clear completed" button
-      // `contains` is actually serving two purposes here.
-      // First, it's ensuring that the button exists within the dom.
-      // This button only appears when at least one task is checked
-      // so this command is implicitly verifying that it does exist.
-      // Second, it selects the button so we can click it.
-      cy.contains('Clear completed').click()
-
-      // Then we can make sure that there is only one element
-      // in the list and our element does not exist
-      cy.get('.todo-list li')
-        .should('have.length', 1)
-        .should('not.have.text', 'Pay electric bill')
-
-      // Finally, make sure that the clear button no longer exists.
-      cy.contains('Clear completed').should('not.exist')
-    })
-  })
-  */
-})
+describe('Challenge with multifile editor', () => {
+  // Page will change after this test. If your test requires page used in previous
+  // tests make sure it is above this one
+  it('prompts unauthenticated user to sign in to save progress', () => {
+    cy.visit(location);
+    cy.focused().type('{end}{enter}<meta charset="UTF-8" />{ctrl+enter}');
+    cy.get(selectors.signInButton).contains("Sign in to save your progress");
+    cy.contains("Congratulations, your code passes. Submit your code to continue.");
+    cy.get(selectors.signInButton).click();
+    cy.go('back');
+    cy.get(selectors.signInButton).should('not.exist');
+  });
+});
