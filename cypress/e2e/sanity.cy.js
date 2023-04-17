@@ -21,4 +21,11 @@ describe('Challenge with multifile editor', () => {
     cy.go('back');
     cy.get(selectors.signInButton).should('not.exist');
   });
+  it('focuses the submit button after testing a valid solution', () => {
+    cy.visit(location);
+    cy.focused().type('{end}{enter}<meta charset="UTF-8" />');
+    cy.get(selectors.checkLowerJawButton).should('not.be.focused');
+    cy.get(selectors.checkLowerJawButton).click();
+    cy.get(selectors.submitLowerJawButton).should('be.focused');
+  });
 });
