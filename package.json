@@ -16,7 +16,7 @@
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.5",
-    "marked": "4.3.0",
+    "marked": "5.0.0",
     "msw": "1.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
