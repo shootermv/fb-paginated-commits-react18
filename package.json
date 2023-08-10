@@ -25,7 +25,7 @@
     "react-test-renderer": "18.2.0"
   },
   "devDependencies": {
-    "@babel/runtime": "7.22.6",
+    "@babel/runtime": "7.22.10",
     "cypress": "12.17.3",
     "typescript": "5.1.6",
     "wait-on": "7.0.1"
