@@ -21,20 +21,22 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router-dom": "6.15.0",
-    "react-scripts": "5.0.1",
     "react-test-renderer": "18.2.0"
   },
   "devDependencies": {
     "@babel/runtime": "7.22.10",
-    "cypress": "12.17.4",
+    "@vitejs/plugin-react": "^4.0.4",
+    "cypress": "12.17.3",
     "typescript": "5.1.6",
+    "vite": "^4.4.9",
+    "vite-plugin-svgr": "^3.2.0",
+    "vite-tsconfig-paths": "^4.2.0",
     "wait-on": "7.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "vite ",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
     "cy:open": "cypress open",
     "cy:ci": "yarn start & wait-on http://localhost:3000 & cypress run"
   },
