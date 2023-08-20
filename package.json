@@ -42,7 +42,7 @@
     "serve": "vite preview",
     "test": "vitest",
     "cy:open": "cypress open",
-    "cy:ci": "yarn start & wait-on http://localhost:3000 & cypress run"
+    "cy:ci": "yarn start & wait-on http://localhost:5173 & cypress run"
   },
   "jest": {
     "verbose": true
