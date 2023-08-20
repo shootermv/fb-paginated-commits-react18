@@ -2,6 +2,7 @@ import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { marked } from "marked";
 import Panel from "./Panel";
+
 describe("Panel", () => {
   test("panel should contain title text", () => {
     let title = "hi";
@@ -9,6 +10,7 @@ describe("Panel", () => {
     const { debug, getByTestId } = render(<Panel title={title}>vasi</Panel>);
     expect(getByTestId("panel-wrap").textContent).toContain(title);
   });
+
   test("panel should NOT show content text if it closed", () => {
     let title = "hi";
     let child = "vova";
@@ -17,9 +19,10 @@ describe("Panel", () => {
         <Panel title={title}>{child}</Panel>
       </div>
     );
-    expect(getByTestId("panel-main").className).not.toBe('open');
+    expect(getByTestId("panel-main").className).not.toBe("open");
     //debug()
   });
+
   test("panel should show content text if it open", () => {
     let title = "hi";
     let child = "vovachka";
@@ -31,14 +34,14 @@ describe("Panel", () => {
         </Panel>
       </div>
     );
-    expect(getByTestId("panel-main").className).toBe('open');
-   // debug()
+    expect(getByTestId("panel-main").className).toBe("open");
+    // debug()
   });
 
   test("panel should call setPanelOpen func when header clicked", () => {
     let title = "hi";
     let child = "vovachka";
-    let setOpen = jest.fn();
+    let setOpen = vi.fn();
     const { debug, getByTestId } = render(
       <div className="accordion">
         <Panel title={title} setPanelOpen={setOpen}>
@@ -54,7 +57,7 @@ describe("Panel", () => {
     let title = "hi";
     let child = "vovachka";
     let idx = 2;
-    let setOpen = jest.fn();
+    let setOpen = vi.fn();
     const { debug, getByTestId } = render(
       <div className="accordion">
         <Panel title={title} setPanelOpen={setOpen} panelIdx={idx}>

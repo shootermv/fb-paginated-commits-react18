@@ -1,6 +1,9 @@
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
+  env: {
+    baseUrl: "http://localhost:5173",
+  },
   component: {
     devServer(cypressConfig) {
       // component testing dev server setup code
