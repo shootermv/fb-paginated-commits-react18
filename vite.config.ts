@@ -26,6 +26,13 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: './tests/setup.js',
+    exclude: [
+      '**/node_modules/**',
+      '**/dist/**',
+      '**/cypress/**',
+      '**/.{idea,git,cache,output,temp}/**',
+      './e2e/**',
+    ],
   },
   // Workaround before renaming .js to .jsx
   optimizeDeps: {
