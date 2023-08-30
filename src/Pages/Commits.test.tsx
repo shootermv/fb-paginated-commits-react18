@@ -25,7 +25,7 @@ test("when fetched empty array - should render 'no records found' message", asyn
   });
 });
 
-test.skip("should render some records", async () => {
+test("should render some records", async () => {
   const record = {
     html_url: "hh",
     author: { avatar_url: "uuu", login: "jjj" },
@@ -41,7 +41,7 @@ test.skip("should render some records", async () => {
   });
 });
 
-test.skip("should show loader when loading and hide it after request ended", async () => {
+test("should show loader when loading and hide it after request ended", async () => {
   vi.spyOn(global, "fetch").mockResolvedValue({
     json: vi.fn().mockResolvedValue([]),
   } as any);
