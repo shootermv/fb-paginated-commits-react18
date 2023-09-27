@@ -23,7 +23,6 @@
     "react-test-renderer": "18.2.0"
   },
   "devDependencies": {
-    "@babel/runtime": "7.22.11",
     "@playwright/test": "^1.37.1",
     "@testing-library/jest-dom": "6.1.2",
     "@vitejs/plugin-react": "^4.0.4",
