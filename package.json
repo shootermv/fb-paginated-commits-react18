@@ -40,7 +40,7 @@
     "build": "tsc && vite build",
     "serve": "vite preview",
     "test": "vitest",
-    "e2e": "npx playwright test --ui"
+    "e2e:ui": "playwright test --ui"
   },
   "jest": {
     "verbose": true
