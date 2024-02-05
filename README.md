@@ -27,7 +27,7 @@ Single Page App Displaying Recent Commits and PRs of [React](https://reactjs.org
 # Tools
 - react 18
 - unit tests [react testing library](https://testing-library.com/)
-- e2e tests [cypress](https://www.cypress.io/)
+- e2e tests [playwright](https://playwright.dev/)
 
 # Development
 ## To run:
