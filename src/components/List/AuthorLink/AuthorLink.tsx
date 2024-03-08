@@ -1,5 +1,11 @@
 import "./AuthorLink.css";
-export default function AuthorLink({ who }) {
+interface IAuthorLink {
+  who: {
+   login: string;
+   avatar_url: string
+  }
+}
+const AuthorLink: React.FC<IAuthorLink> = ({who}) => {
   return (
     <div>
       <a href={`https://github.com/${who.login}`} target="_blank">
@@ -8,3 +14,4 @@ export default function AuthorLink({ who }) {
     </div>
   );
 }
+export default AuthorLink
