@@ -3,7 +3,7 @@ import "@testing-library/jest-dom";
 import List from "./List";
 
 test("should display 'no results' if no results passed", () => {
-  let commits = [];
+  let commits: any = [];
 
   const { debug, getByTestId } = render(<List commits={commits} />);
   expect(getByTestId("no-data-label")).toBeVisible();

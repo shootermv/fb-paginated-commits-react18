@@ -13,11 +13,13 @@ export default function List({ commits }) {
   useEffect(() => {
     setCurrentPage(1);
   }, [term]);
+
   const filtered = useMemo(() => {
     return commits.filter((itm) =>
       itm.title.toLowerCase().includes(term.toLowerCase())
     );
   }, [term, commits]);
+  
   const currentCommits = useMemo(() => {
     const offset = (currentPage - 1) * pageSize;
     return filtered.slice(offset, offset + pageSize); // 0 , 4 // 5, 10
