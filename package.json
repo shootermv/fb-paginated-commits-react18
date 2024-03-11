@@ -33,7 +33,8 @@
     "vite-plugin-svgr": "^4.0.0",
     "vite-tsconfig-paths": "^4.2.0",
     "vitest": "^1.0.0",
-    "wait-on": "7.2.0"
+    "wait-on": "7.2.0",
+    "@types/bun": "latest"
   },
   "scripts": {
     "start": "vite ",
