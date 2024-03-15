@@ -4,8 +4,8 @@ import Message from "./Message";
 import AuthorLink from "./AuthorLink";
 import DateCmp from "./DateCmp";
 import "./List.css";
-
-export default function List({ commits }) {
+import {Commit} from '../../models/commit';
+export default function List({commits}: { commits: Commit[] }) {
   const [term, setTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 5;
