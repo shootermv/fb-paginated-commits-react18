@@ -2987,10 +2987,10 @@ ms@2.1.2:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-msw@2.2.8:
-  version "2.2.8"
-  resolved "https://registry.yarnpkg.com/msw/-/msw-2.2.8.tgz#3cf3637d33b9bc411fd2006b9e8dd0b96e0a7ced"
-  integrity sha512-K2LvWq2Lgfo6lEvn4eXj9uOCXuXZdZdHtNzyx+UBZY+iaQ5fdBaev3TLmUyLOUY4N8p0pYf3Iy7RA8sDnQ1M1Q==
+msw@2.2.10:
+  version "2.2.10"
+  resolved "https://registry.yarnpkg.com/msw/-/msw-2.2.10.tgz#3db96670495e722e493b7855a0c722f016ed207b"
+  integrity sha512-OQhHBocUsI8j+czCTRouGCGYE8pk6hq8HQ0HFg9mYQg7KCzqVpUSbMikmRbRXGoid28FFvYqjbxB3/UWw50VZQ==
   dependencies:
     "@bundled-es-modules/cookie" "^2.0.0"
     "@bundled-es-modules/statuses" "^1.0.1"
