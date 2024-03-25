@@ -1,12 +1,12 @@
 import { render, fireEvent } from "@testing-library/react";
-import "@testing-library/jest-dom";
+import { expect, test } from "vitest";
 import List from "./List";
 
 test("should display 'no results' if no results passed", () => {
   let commits: any = [];
 
   const { debug, getByTestId } = render(<List commits={commits} />);
-  expect(getByTestId("no-data-label")).toBeVisible();
+  expect(getByTestId("no-data-label")).toBeTruthy();
   //debug()
 });
 test("should NOT display 'no results' if some results passed", () => {

@@ -1,6 +1,6 @@
 import { renderHook } from "@testing-library/react-hooks";
 import useFetchData from "./useFetchData";
-
+import { expect, test, beforeEach, afterEach, vi } from "vitest";
 beforeEach(() => {
   vi.spyOn(global, "fetch").mockResolvedValue({
     json: vi.fn().mockResolvedValue([{ nm: "vova" }]),
