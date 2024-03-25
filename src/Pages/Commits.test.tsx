@@ -1,7 +1,7 @@
 import { render, cleanup, waitFor, screen } from "@testing-library/react";
 import { Commits } from "./Commits";
 
-
+import { expect, test, beforeEach, afterEach, vi } from "vitest";
 beforeEach(() => {
   vi.spyOn(global, "fetch").mockResolvedValue({
     json: vi.fn().mockResolvedValue([]),
@@ -37,7 +37,7 @@ test("should render some records", async () => {
 
   const { debug, getByTestId } = render(<Commits />);
   await waitFor( () => {
-    expect(screen.getByTestId("data-table")).toBeInTheDocument();
+    expect(screen.getByTestId("data-table")).toBeTruthy();
   });
 });
 
@@ -46,8 +46,8 @@ test("should show loader when loading and hide it after request ended", async ()
     json: vi.fn().mockResolvedValue([]),
   } as any);
   const { debug, container } = render(<Commits />);
-  expect(container.querySelector("svg")).toBeInTheDocument();
+  expect(container.querySelector("svg")).toBeTruthy();
   await waitFor(() => {
-    expect(container.querySelector("svg")).not.toBeInTheDocument();
+    expect(container.querySelector("svg")).not.toBeTruthy();
   });
 });

@@ -1,5 +1,5 @@
 import { render, fireEvent } from "@testing-library/react";
-import "@testing-library/jest-dom";
+import { expect, test, describe } from "vitest";
 import Panel from "./Panel";
 import Accordion from "./Accordion";
 describe("Accordion", () => {
@@ -7,7 +7,7 @@ describe("Accordion", () => {
     let title = "hi";
     let panel = <Panel title={title}>vasi</Panel>;
     const { debug, getByTestId } = render(<Accordion>{panel}</Accordion>);
-    expect(getByTestId("panel-wrap")).toBeInTheDocument();
+    expect(getByTestId("panel-wrap")).toBeTruthy();
     expect(getByTestId("panel-wrap").textContent).toContain(title);
   });
 });

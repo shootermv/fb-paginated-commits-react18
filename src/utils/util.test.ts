@@ -1,5 +1,5 @@
 import { formatMessage } from "./util";
-
+import { expect, test } from "vitest";
 test("pass empty args", () => {
   const showMore = false;
   expect(formatMessage("", "", showMore)).toBe("");

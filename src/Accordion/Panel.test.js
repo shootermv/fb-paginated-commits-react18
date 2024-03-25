@@ -1,5 +1,5 @@
 import { render, fireEvent } from "@testing-library/react";
-import "@testing-library/jest-dom";
+import { expect, test, describe, vi } from "vitest";
 import { marked } from "marked";
 import Panel from "./Panel";
 

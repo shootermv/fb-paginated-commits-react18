@@ -1,5 +1,5 @@
 import { render, fireEvent } from "@testing-library/react";
-import "@testing-library/jest-dom";
+import { expect, test } from "vitest";
 import Message from "./Message";
 
 test("should display message text", () => {
@@ -18,7 +18,7 @@ test("should display 'show more' after end of long message", () => {
     <Message title={title} term="" link="" />
   );
   expect(getByTestId("commit-message").textContent).not.toContain(title);
-  expect(getByTestId("show-more")).toBeVisible();
+  expect(getByTestId("show-more")).toBeTruthy();
   //debug();
 });
 test("after clicking 'show more' should show full text", () => {
