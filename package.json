@@ -37,6 +37,7 @@
     "build": "tsc && vite build",
     "serve": "vite preview",
     "test": "vitest",
+    "test:ci": "vitest --run",
     "e2e:ui": "playwright test --ui"
   },
   "browserslist": [

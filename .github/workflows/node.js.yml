@@ -23,8 +23,9 @@ jobs:
       with:
         node-version: 18
         cache: 'yarn'
-
-    - run: yarn install
-    - run: yarn test
+    - name: Install Dependencies
+      run: yarn install
+    - name: Run Unit tests
+      run: yarn test:ci
 
  
