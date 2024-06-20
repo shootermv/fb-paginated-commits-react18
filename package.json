@@ -25,7 +25,7 @@
     "@playwright/test": "^1.37.1",
     "@vitejs/plugin-react": "^4.0.4",
     "happy-dom": "^14.3.6",
-    "typescript": "5.4.5",
+    "typescript": "5.5.2",
     "vite": "^5.0.0",
     "vite-plugin-svgr": "^4.0.0",
     "vite-tsconfig-paths": "^4.2.0",
