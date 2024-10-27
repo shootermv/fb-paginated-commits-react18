@@ -4,7 +4,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import SideNav from "./SideNav";
 
-const Layout :FC<PropsWithChildren<{}>> = ({children}) => {
+const Layout: FC<PropsWithChildren<{}>> = ({ children }) => {
   const [menuShown, setMenuShown] = useState(false);
   const toggleMenu = () => setMenuShown(!menuShown);
   return (
@@ -19,6 +19,6 @@ const Layout :FC<PropsWithChildren<{}>> = ({children}) => {
       </div>
     </LayoutCtx.Provider>
   );
-}
+};
 
 export default Layout;
