@@ -11,7 +11,7 @@ const Layout: FC<PropsWithChildren<{}>> = ({ children }) => {
     <LayoutCtx.Provider value={{ toggleMenu, menuShown }}>
       <div className="MainWrap">
         <SideNav />
-        <div className="App">
+        <div className="App flex flex-1 flex-col text-center">
           <Header />
           <main>{children}</main>
           <Footer />
