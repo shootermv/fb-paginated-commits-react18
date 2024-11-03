@@ -1,7 +1,15 @@
 import { useState } from "react";
 import { formatMessage } from "../../../utils/util";
 import "./Message.css";
-export default function Message({ title, term, link = "" }) {
+export default function Message({
+  title,
+  term,
+  link = "",
+}: {
+  title: string;
+  term: string;
+  link: string;
+}) {
   const [showMore, setShowMore] = useState(false);
   return (
     <div className="commit-message">
@@ -11,7 +19,7 @@ export default function Message({ title, term, link = "" }) {
           target={"_blank"}
           data-testid="commit-message"
           dangerouslySetInnerHTML={{
-            __html: formatMessage(title, term, showMore)
+            __html: formatMessage(title, term, showMore),
           }}
         />
         {title.length > 100 && (
