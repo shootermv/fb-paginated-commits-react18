@@ -4,8 +4,10 @@ import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
 import { useState } from "react";
 export default function ModeToggle() {
   const [currentTheme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : null
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
+
+  document.documentElement.setAttribute("data-theme", currentTheme!);
   const changeMode = (e: React.ChangeEvent<HTMLInputElement>) => {
     const currentTheme = e.target.checked ? "dark" : "light";
     document.documentElement.setAttribute("data-theme", currentTheme);
