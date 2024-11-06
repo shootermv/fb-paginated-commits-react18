@@ -1551,9 +1551,9 @@ graphql@^16.8.1:
   integrity sha512-59LZHPdGZVh695Ud9lRzPBVTtlX9ZCV150Er2W43ro37wVof0ctenSaskPPjN7lVTIN8mSZt8PHUNKZuNQUuxw==
 
 happy-dom@^15.0.0:
-  version "15.10.0"
-  resolved "https://registry.yarnpkg.com/happy-dom/-/happy-dom-15.10.0.tgz#8feb49266ea892f83ec84d8debf35be6f7a2d5e6"
-  integrity sha512-l0DD4nTVearx2ODsrF3ywfdP+TLYPCVvNbG4ph2RmfB39HKiPY5tvk5a4EPGvcygKVykpwYw+Bh+7IDtnvkotQ==
+  version "15.10.1"
+  resolved "https://registry.yarnpkg.com/happy-dom/-/happy-dom-15.10.1.tgz#db49321a7af97d8c18c45622de2817b382ac7595"
+  integrity sha512-FuGnj/qIB4QnBL6fWmD7Wnh6STxevLgOVWB6+nopDGgWG1+t9CXkNB2ldZ+iqwD2UKxD2D0SU8el8A6AX6Q1+g==
   dependencies:
     entities "^4.5.0"
     webidl-conversions "^7.0.0"
