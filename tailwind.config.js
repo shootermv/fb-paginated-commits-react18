@@ -13,6 +13,9 @@ export default {
         secondary: {
           DEFAULT: "var(--secondary)",
         },
+        ternary: {
+          DEFAULT: "var(--ternary)",
+        },
       },
     },
   },

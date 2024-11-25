@@ -8,7 +8,7 @@
   border: 5px solid transparent;
 }
 .caret.down {
-  border-top-color:  var(--secondary-text-color);
+  border-top-color: var(--secondary-text-color);
 }
 .caret.right {
   border-left-color: var(--secondary-text-color);
@@ -18,4 +18,27 @@
 }
 .caret.left {
   border-right-color: var(--secondary-text-color);
+}
+
+/*   better accordion   */
+.accordion-enter {
+  max-height: 0;
+  opacity: 0;
+}
+
+.accordion-enter-active {
+  max-height: 300px; /* Adjust according to your content */
+  opacity: 1;
+  transition: max-height 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+.accordion-exit {
+  max-height: 300px; /* Adjust according to your content */
+  opacity: 1;
+}
+
+.accordion-exit-active {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 300ms ease-in-out, opacity 300ms ease-in-out;
 }

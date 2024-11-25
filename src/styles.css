@@ -22,15 +22,16 @@ body,
   --font-color: #000;
   --bg-color: #fff;
   --secondary-bg-color: #eee;
-  
 }
 [data-theme="light"] {
   --primary: #04aa6d;
   --secondary: #fefefe;
+  --ternary: #818cab;
 }
 [data-theme="dark"] {
   --primary: #9a97f3;
   --secondary: #fefefe;
+  --ternary: #818cab;
   --primary-color: #9a97f3;
   --header-footer-bg-color: #9a97f3;
   --header-footer-font-color: #fff;
@@ -40,11 +41,15 @@ body,
   --bg-color: #161625;
   --secondary-bg-color: #818cab;
 }
-.light{
+.light {
   --primary: #04aa6d;
+  --secondary: #fefefe;
+  --ternary: #818cab;
 }
-.dark{
+.dark {
   --primary: #9a97f3;
+  --secondary: #161625;
+  --ternary: #26245c;
 }
 .MainWrap {
   flex: 1;
@@ -60,7 +65,7 @@ body,
 main {
   flex: 1;
   max-width: 1200px;
-  margin: 0 auto;
+  padding: 0 0.5rem;
 }
 
 a {
