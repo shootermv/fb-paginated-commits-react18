@@ -1,18 +1,28 @@
 import { useEffect, useRef } from "react";
 import "./Panel.css";
+
+interface PanelProps {
+  title: string;
+  children: React.ReactNode;
+  setPanelOpen: (index: number) => void;
+  panelIdx: number;
+  open: boolean;
+}
+
 export default function Panel({
   title,
   children,
   setPanelOpen,
   panelIdx,
   open
-}) {
-  const ref = useRef();
-  //const [open, setOpen] = useState(false);
+}: PanelProps) {
+  const ref = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     if (!ref.current) return;
-    ref.current.style.maxHeight = open ? ref.current.scrollHeight + "px" : 0;
+    ref.current.style.maxHeight = open ? `${ref.current.scrollHeight}px` : "0";
   }, [open]);
+
   return (
     <div className="panel" data-testid="panel-wrap">
       <header

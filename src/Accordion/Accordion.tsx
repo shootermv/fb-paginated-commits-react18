@@ -19,7 +19,7 @@ export default function Accordion({ children }: AccordionProps) {
   };
 
   return (
-    <div className="accordion">
+    <div className="accordion border-solid border-2 border-black">
       {Children.map(children, (child, idx) =>
         cloneElement(child as React.ReactElement<AccordionChildProps>, {
           open: panels[idx],
