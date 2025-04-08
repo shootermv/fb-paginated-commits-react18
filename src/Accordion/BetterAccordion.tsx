@@ -1,5 +1,5 @@
 import { marked } from "marked";
-import React, { ReactNode, useState } from "react";
+import React, { ReactNode, useRef, useState } from "react";
 import { CSSTransition } from "react-transition-group";
 import "./Accordion.css";
 
@@ -18,7 +18,8 @@ const Accordion: React.FC<AccordionProps> = ({
   allowMultipleOpen = false,
 }) => {
   const [openIndexes, setOpenIndexes] = useState<number[]>([]);
-
+  // Using useRef to avoid unnecessary re-renders 
+  const nodeRef = useRef(null);
   const toggleItem = (index: number) => {
     if (allowMultipleOpen) {
       setOpenIndexes((prev) =>
@@ -61,6 +62,7 @@ const Accordion: React.FC<AccordionProps> = ({
 
           {/* Accordion Content */}
           <CSSTransition
+            nodeRef={nodeRef}
             in={openIndexes.includes(index)}
             timeout={300}
             classNames="accordion"
