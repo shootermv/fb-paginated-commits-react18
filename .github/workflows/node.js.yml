@@ -17,15 +17,18 @@ jobs:
   # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+    - uses: actions/checkout@v4
+    - uses: pnpm/action-setup@v2
+      with:
+        version: 9.6.0
     - name: ⎔ Setup node
       uses: actions/setup-node@v4
       with:
-        node-version: 18
-        cache: 'yarn'
+        node-version: 21
+        cache: 'pnpm'
     - name: Install Dependencies
-      run: yarn install
+      run: pnpm install
     - name: Run Unit tests
-      run: yarn test:ci
+      run: pnpm test:ci
 
  
