@@ -25,7 +25,7 @@ Single Page App Displaying Recent Commits and PRs of [React](https://reactjs.org
 - github actions
 
 # Tools
-- react 18
+- react 19
 - unit tests [react testing library](https://testing-library.com/)
 - e2e tests [playwright](https://playwright.dev/)
 
@@ -33,6 +33,6 @@ Single Page App Displaying Recent Commits and PRs of [React](https://reactjs.org
 ## To run:
 - open terminal
 - clone the project
-- `yarn` (or `yarn install`)
-- `yarn start`
+- `pnpm` (or `pnpm install`)
+- `pnpm start`
 

@@ -9,16 +9,22 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+    - uses: actions/checkout@v4  
+    - uses: pnpm/action-setup@v2
+      with:
+        version: 9.6.0      
     - uses: actions/setup-node@v4
       with:
-        node-version: 18
+        node-version: 21
+        cache: 'pnpm'
+
+        
     - name: Install dependencies
-      run: yarn     
+      run: pnpm install --frozen-lockfile
     - name: Install Playwright Browsers
-      run: yarn playwright install --with-deps
+      run: pnpm playwright install --with-deps
     - name: Run Playwright tests
-      run: yarn playwright test
+      run: pnpm playwright test
     - uses: actions/upload-artifact@v4
       if: always()
       with:
