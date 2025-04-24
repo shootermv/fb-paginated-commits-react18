@@ -1,6 +1,5 @@
 ![ci](https://github.com/shootermv/fb-paginated-commits-react18/actions/workflows/node.js.yml/badge.svg)
-# Playing Around With React18
-
+# Playing Around With React Latest Version
 ![gif](./commits.gif)
 
 Single Page App Displaying Recent Commits and PRs of [React](https://reactjs.org) Repo  
