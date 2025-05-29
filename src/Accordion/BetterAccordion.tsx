@@ -68,8 +68,8 @@ const Accordion: React.FC<AccordionProps> = ({
             classNames="accordion"
             unmountOnExit
           >
-            <div className="overflow-hidden transition-all duration-300">
-              <div
+            <div className="overflow-hidden transition-all duration-300" ref={nodeRef}>
+              <div ref={nodeRef}
                 className="px-4 py-3 border-t"
                 dangerouslySetInnerHTML={{ __html: marked(item?.body || "") }}
               />
