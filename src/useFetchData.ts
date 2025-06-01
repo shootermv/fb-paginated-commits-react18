@@ -6,28 +6,29 @@ const useFetchData = (url: string, processData = (dta: any) => dta) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  if (!url) return { data, loading, error: "must pass url param!" }
+  if (!url) return { data, loading, error: "must pass url param!" };
   useEffect(() => {
-    setLoading(true);
-    fetch(`https://api.github.com/repos/facebook/react/${url}`)
-      .then((d) => d.json())
-      .then((d) => {
+    const fetchData = async () => {
+      setLoading(true);
+      try {
+        const rawdata = await fetch(
+          `https://api.github.com/repos/facebook/react/${url}`
+        );
+        const d = await rawdata.json();
         if (d?.message?.includes("limit")) {
-          console.log(d.message);
-          // throw Error("Err");
           setData(
             processData(url === "commits" ? mockCommitsData : mockPrsData)
           );
           return;
         }
         setData(processData(d)); // can be replaced by "mockData"
-      })
-      .catch((err) => {
+      } catch (err) {
         setError("some error!");
-      })
-      .finally(() => {
+      } finally {
         setLoading(false);
-      });
+      }
+    };
+    fetchData();
   }, []);
   return { data, loading, error };
 };
