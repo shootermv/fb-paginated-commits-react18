@@ -93,6 +93,9 @@ importers:
       vitest:
         specifier: ^2.0.0
         version: 2.1.9(@types/node@22.16.2)(happy-dom@15.11.7)(msw@2.10.3(@types/node@22.16.2)(typescript@5.8.3))
+      vitest-fetch-mock:
+        specifier: ^0.4.5
+        version: 0.4.5(vitest@2.1.9(@types/node@22.16.2)(happy-dom@15.11.7)(msw@2.10.3(@types/node@22.16.2)(typescript@5.8.3)))
 
 packages:
 
@@ -1723,6 +1726,12 @@ packages:
         optional: true
       terser:
         optional: true
+
+  vitest-fetch-mock@0.4.5:
+    resolution: {integrity: sha512-nhWdCQIGtaSEUVl96pMm0WggyDGPDv5FUy/Q9Hx3cs2RGmh3Q/uRsLClGbdG3kXBkJ3br5yTUjB2MeW25TwdOA==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      vitest: '>=2.0.0'
 
   vitest@2.1.9:
     resolution: {integrity: sha512-MSmPM9REYqDGBI8439mA4mWhV5sKmDlBKWIYbA3lRb2PTHACE0mgKwA8yQ2xq9vxDTuk4iPrECBAEW2aoFXY0Q==}
@@ -3364,6 +3373,10 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.16.2
       fsevents: 2.3.3
+
+  vitest-fetch-mock@0.4.5(vitest@2.1.9(@types/node@22.16.2)(happy-dom@15.11.7)(msw@2.10.3(@types/node@22.16.2)(typescript@5.8.3))):
+    dependencies:
+      vitest: 2.1.9(@types/node@22.16.2)(happy-dom@15.11.7)(msw@2.10.3(@types/node@22.16.2)(typescript@5.8.3))
 
   vitest@2.1.9(@types/node@22.16.2)(happy-dom@15.11.7)(msw@2.10.3(@types/node@22.16.2)(typescript@5.8.3)):
     dependencies:
