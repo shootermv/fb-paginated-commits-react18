@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 import "./SideNav.css";
 import LayoutCtx, { LayoutContextInterface } from "../../Contexts/LayoutCtx";
-import { useContext } from "react";
+import { use } from "react";
 export default function SideNav() {
-  const { toggleMenu, menuShown } = useContext(LayoutCtx) as LayoutContextInterface;
+  const { toggleMenu, menuShown } = use(LayoutCtx) as LayoutContextInterface;
   return (
     <>
       {menuShown && <div className="backdrop" onClick={toggleMenu} />}
