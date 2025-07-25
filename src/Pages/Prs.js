@@ -1,12 +1,14 @@
-import useFetchData from "../useFetchData";
+import useFetchData from "../CustomHooks/useFetchData";
 import Loader from "../Loader";
 import ErrorCmp from "../components/Error";
 import PullsList from "../PullsList";
 
 export default function Prs() {
-  const { data: pulls, error, loading } = useFetchData("pulls", (data) =>
-    data.slice(0, 5)
-  );
+  const {
+    data: pulls,
+    error,
+    loading,
+  } = useFetchData("pulls", (data) => data.slice(0, 5));
   return (
     <div>
       <h1>Pull Requests</h1>

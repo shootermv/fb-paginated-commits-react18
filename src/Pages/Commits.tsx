@@ -1,13 +1,14 @@
 import List from "../components/List";
-import useFetchData from "../useFetchData";
+import useFetchData from "../CustomHooks/useFetchData";
 import Loader from "../Loader";
 import ErrorCmp from "../components/Error";
 import { processCommitData } from "../utils/util";
 export function Commits() {
-  const { data: commits, error, loading } = useFetchData(
-    "commits",
-    processCommitData
-  );
+  const {
+    data: commits,
+    error,
+    loading,
+  } = useFetchData("commits", processCommitData);
   return (
     <div>
       <h1>Recent Commits</h1>
