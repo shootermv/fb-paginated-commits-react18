@@ -36,8 +36,8 @@ importers:
         specifier: ^19.1.0
         version: 19.1.7(@types/react@19.1.9)
       marked:
-        specifier: 15.0.12
-        version: 15.0.12
+        specifier: 16.4.2
+        version: 16.4.2
       msw:
         specifier: 2.10.4
         version: 2.10.4(@types/node@22.17.0)(typescript@5.9.2)
@@ -1236,9 +1236,9 @@ packages:
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
 
-  marked@15.0.12:
-    resolution: {integrity: sha512-8dD6FusOQSrpv9Z1rdNMdlSgQOIP880DHqnohobOmYLElGEqAL/JvxvuxZO16r4HtjTlfPRDC1hbvxC9dPN2nA==}
-    engines: {node: '>= 18'}
+  marked@16.4.2:
+    resolution: {integrity: sha512-TI3V8YYWvkVf3KJe1dRkpnjs68JUPyEa5vjKrp1XEEJUAOaQc+Qj+L1qWbPd0SJuAdQkFU0h73sXXqwDYxsiDA==}
+    engines: {node: '>= 20'}
     hasBin: true
 
   merge2@1.4.1:
@@ -2904,7 +2904,7 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  marked@15.0.12: {}
+  marked@16.4.2: {}
 
   merge2@1.4.1: {}
 
