@@ -48,8 +48,8 @@ importers:
         specifier: 19.2.0
         version: 19.2.0(react@19.2.0)
       react-router-dom:
-        specifier: 6.30.2
-        version: 6.30.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+        specifier: 6.30.3
+        version: 6.30.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       react-test-renderer:
         specifier: 18.3.1
         version: 18.3.1(react@19.2.0)
@@ -478,8 +478,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  '@remix-run/router@1.23.1':
-    resolution: {integrity: sha512-vDbaOzF7yT2Qs4vO6XV1MHcJv+3dgR1sT+l3B8xxOVhUC336prMvqrvsLL/9Dnw2xr6Qhz4J0dmS0llNAbnUmQ==}
+  '@remix-run/router@1.23.2':
+    resolution: {integrity: sha512-Ic6m2U/rMjTkhERIa/0ZtXJP17QUi2CbWE7cqx4J58M8aA3QTfW+2UlQ4psvTX9IO1RfNVhK3pcpdjej7L+t2w==}
     engines: {node: '>=14.0.0'}
 
   '@rolldown/pluginutils@1.0.0-beta.27':
@@ -1368,15 +1368,15 @@ packages:
     resolution: {integrity: sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==}
     engines: {node: '>=0.10.0'}
 
-  react-router-dom@6.30.2:
-    resolution: {integrity: sha512-l2OwHn3UUnEVUqc6/1VMmR1cvZryZ3j3NzapC2eUXO1dB0sYp5mvwdjiXhpUbRb21eFow3qSxpP8Yv6oAU824Q==}
+  react-router-dom@6.30.3:
+    resolution: {integrity: sha512-pxPcv1AczD4vso7G4Z3TKcvlxK7g7TNt3/FNGMhfqyntocvYKj+GCatfigGDjbLozC4baguJ0ReCigoDJXb0ag==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
       react-dom: '>=16.8'
 
-  react-router@6.30.2:
-    resolution: {integrity: sha512-H2Bm38Zu1bm8KUE5NVWRMzuIyAV8p/JrOaBJAwVmp37AXG72+CZJlEBw6pdn9i5TBgLMhNDgijS4ZlblpHyWTA==}
+  react-router@6.30.3:
+    resolution: {integrity: sha512-XRnlbKMTmktBkjCLE8/XcZFlnHvr2Ltdr1eJX4idL55/9BbORzyZEaIkBFDhFGCEWBBItsVrDxwx3gnisMitdw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
@@ -2090,7 +2090,7 @@ snapshots:
     dependencies:
       playwright: 1.56.1
 
-  '@remix-run/router@1.23.1': {}
+  '@remix-run/router@1.23.2': {}
 
   '@rolldown/pluginutils@1.0.0-beta.27': {}
 
@@ -2868,16 +2868,16 @@ snapshots:
 
   react-refresh@0.17.0: {}
 
-  react-router-dom@6.30.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
+  react-router-dom@6.30.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
-      '@remix-run/router': 1.23.1
+      '@remix-run/router': 1.23.2
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
-      react-router: 6.30.2(react@19.2.0)
+      react-router: 6.30.3(react@19.2.0)
 
-  react-router@6.30.2(react@19.2.0):
+  react-router@6.30.3(react@19.2.0):
     dependencies:
-      '@remix-run/router': 1.23.1
+      '@remix-run/router': 1.23.2
       react: 19.2.0
 
   react-shallow-renderer@16.15.0(react@19.2.0):
