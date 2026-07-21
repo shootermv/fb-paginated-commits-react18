@@ -16,7 +16,7 @@
     "@types/react-dom": "^19.1.0",
     "marked": "15.0.12",
     "msw": "2.15.0",
-    "react": "19.2.7",
+    "react": "19.2.8",
     "react-dom": "19.2.7",
     "react-router-dom": "6.30.4",
     "react-test-renderer": "18.3.1",
